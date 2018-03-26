@@ -1,0 +1,1333 @@
+
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script nonce="1701763053" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="1701763053" type="text/javascript">
+    var biz = ""||"MzIwMTM5MjUwMg==";
+    var sn = "" || ""|| "d645ec0df174e05384bbff40aada4cff";
+    var mid = "" || ""|| "403471227";
+    var idx = "" || "" || "1";
+    window.__allowLoadResFromMp = true; 
+    
+    </script>
+<script nonce="1701763053" type="text/javascript">
+var page_begintime=+new Date,is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&biz&&mid&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script>
+<script nonce="1701763053" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="1701763053" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var tmp = url.split('?'),
+            query = (tmp[1] || "").split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || "" || '';
+        window.key = params['key'] || "" || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+        window.appmsg_token = "";
+    })();
+
+    function wx_loaderror() {
+        if (location.pathname === '/bizmall/reward') {
+            new Image().src = '/mp/jsreport?key=96&content=reward_res_load_err&r=' + Math.random();
+        }
+    }
+
+</script>
+
+        <title>《每天5分钟玩转 OpenStack》教程目录</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary.voice{padding-top:66px}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.icon_original_tag_primary{display:inline-block;padding:1px .65em;margin-top:-0.2em;vertical-align:middle;line-height:1.4;font-size:12px;border-top-left-radius:.85em 50%;-moz-border-radius-topleft:.85em 50%;-webkit-border-top-left-radius:.85em 50%;border-top-right-radius:.85em 50%;-moz-border-radius-topright:.85em 50%;-webkit-border-top-right-radius:.85em 50%;border-bottom-left-radius:.85em 50%;-moz-border-radius-bottomleft:.85em 50%;-webkit-border-bottom-left-radius:.85em 50%;border-bottom-right-radius:.85em 50%;-moz-border-radius-bottomright:.85em 50%;-webkit-border-bottom-right-radius:.85em 50%;border:1px solid #9e9e9e;color:#8c8c8c}.icon_original_tag_primary.title_tag{background-color:#e94442;border-color:#d04b4e;color:#fff;margin-bottom:.5em;padding:2px .65em;border-top-left-radius:.95em 50%;-moz-border-radius-topleft:.95em 50%;-webkit-border-top-left-radius:.95em 50%;border-top-right-radius:.95em 50%;-moz-border-radius-topright:.95em 50%;-webkit-border-top-right-radius:.95em 50%;border-bottom-left-radius:.95em 50%;-moz-border-radius-bottomleft:.95em 50%;-webkit-border-bottom-left-radius:.95em 50%;border-bottom-right-radius:.95em 50%;-moz-border-radius-bottomright:.95em 50%;-webkit-border-bottom-right-radius:.95em 50%}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:2.2em}.rich_media_content .list-paddingleft-2 .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media screen and (device-aspect-ratio:2/3),screen and (device-aspect-ratio:40/71){.meta_original_tag{padding-top:0}}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait){.rich_media_area_extra{padding-bottom:34px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape){.rich_media_area_primary{padding:20px 59px 15px 59px}.rich_media_area_extra{padding:0 59px 21px 59px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative;font-weight:400;font-style:normal;text-indent:0;text-shadow:none 1px 1px rgba(0,0,0,0.5)}.gif_img_wrp img{vertical-align:top}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px;min-width:65px}.gif_img_tips.loading{min-width:75px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.gif_bg_tips_wrp{position:relative;height:0;line-height:0;margin:0;padding:0}.gif_bg_tips_wrp .gif_img_tips_group{position:absolute;top:0;left:0;z-index:9999}.gif_bg_tips_wrp .gif_img_tips_group .gif_img_tips{top:0;left:0;bottom:auto}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:1em 35px 1em 15px;z-index:2;background-color:#c6e0f8;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.rich_media_global_msg.voice{color:#1aad19;background-color:#e8f6e8;padding-left:43.3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rich_media_global_msg.voice .ic_voice{position:absolute;top:50%;margin-top:-10px;left:15px;display:inline-block;width:13.3px;height:18.3px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA3CAYAAAB+fggjAAAAAXNSR0IArs4c6QAACb9JREFUaAW9WX9wVMUd3917d5cf/Agp1OTuQgIlQqUoI1JI1Noojg2I+VU7hVrtDDpadRypgzKjU52x09KOdsS20ypSO/WPWttcAqhTOlSoU4FIoRUn0wEZIMndBUkwGEhyv97bfvaS97L77t3lHYUuc+z3935397vf/e4LJZfQnuPPsW0d25ZQzr9mELKSUnIVzHxB/Dh+lBOKf4OEk0FOyQAl/CyltIt5tL29d/V2FzIkLUQ4FA7dwon+KCF0Fee8rBBdS5aSs/D+PUrYbyKtkb9b9BzAlA7CERrqDN1DOH8C8HU57FwSGat6kBGypbcluhMwFj+75XWwemf1vHQqtZ0T3pCtelkp73uJ79s9bT39dqs5HQyFK79jcPIKFErtSgLHjPvQHQB0EFt2hDE2QHU6RMvpkODrw3o50Uk5p3w2N/SlUKhHTNZjskHBz2pi6ylbH22J/k3mOToYCAceIYT/AgYVPhxJQTkMQ792Ez/yQCY8d0fgRl0nj8J2G5z1mvSJ3qCMrYOTb5l0xQFBDIUDjxmcbzUFJnu621/kf/DUmlM9k7RLh4LtwRChxquck0bFCqWjxENuijXF/iXoioNVnZU36wZ5D7PTTCWsWhyp4uFYa+x1k3Y5ezj6oNgtdTVpL0Lo+mhr9BwO0Xib+/bcWYZB35Sdg/sXsOSNV8o5MXK0LfoKYXQDxpJOMZ8L1g8E33JQT6aeQRoJCOJEMxjxfCvSEtlnEq5Uj5h7Ayv2I8U+5w9du/va0oyD896ZV004RQKebIzQ53EQ/jJJubJQhUa2YBXPmqNgy8vPjZ67N+NgMh6/HwSfyURgniwqLvmJif8/+sNrY6O4XV5WxjKMuvHDQOl9uCksHmX0xydWn0hYBJfAgncXzBhNjjZSnX8Fq3ENdmWWUMUhS2Ebv5HrtjDNg/+B5IY4wos0cVukUskqUwj9xfKS2W9GSEwi5QdxFS5BMn54dGzkHkhOy0x18j9COY1O5VxmhGJylIxMjgUTC7WUkfrqJAkQpfuP3nFUElO4WUgwHHza0HU1wG1SGOi0jeSI+kf92hgZlXg0yajBV0gUwri4vqZud/O7PbhxkGiNvM5NWHKV3NN8LGQbuVdDsYIVzOzHOI+ygzYhR/RAxwdbELcPZDEp+Q+2YQcS2L+Zwc4gdSUQS7Oz5BwIKUqWyq5ApEdDsVmhBKaHnHDQVUg1uwKLkkm+USEScsbjId/ra+7fbaMThMHVdpoTjuyxXloqcUg+Eqe4WBb26/5hGXeCkynyfdA9Fo/SQeZlN/StjUQtmgQUFxVnKhyJlAUGOgP13OC3ygxGWZhhSYtkYqIicUHGnWCUluoFz8mzkRzOCf14Wfyikx2ThvQ0B6XZdvhi1QaoAfZHmiMf40xMJmih4BvxWQnbNCD3i/cunoYab4FMQwr5o4zb4Uh9ZMxOM3Fsf91YfPQfOAeLTJrouYc8K3rEII0ikBcKRLTEhUQNuo8E7NSGh4dnyDOFzIioOpxkZdqyXYGSAV2rMYjhIUamkL2ZcANvG+MWWS4DU/parDm2R8AiBj/Bz3IQe14DPKeDRho1hNyonFplhgp/mmaNhpH6s0VVToNFxR7TPcVFJVZdgMG4cNBq0LvRQhyA2vLaMyDrFouTL169KzBlGkEofdnScQYMXBI/raiuXC1fs4wz2iXLI+U0y7gd3tewL41IVhLvmM6X2eWycM7nZ9EEAXWgWDWPpjWg7tx8+IbD4llhNTadTn8XcWgVBphprbhbLQkngJK/ymTdoE/IuDPME5jYSYx1HLn3EH6/B77Rq/m+FG2L3d7X1Pe+kx5kCBJp4G0clDWmAJTD0db+NhO398GO4G3cMDJBbPIY9bShfgyb+OXqMwGPV9rrskFsc6t4fck0GRZPQ5GnZBpO4x/wvrAmKfP+FzjjYF9zn5i58s0ET8MX8hnGc+BxOGnFi8innBg7UUBsFaV6Pt1CeBMrKD73qG8CbPnKUHvg/lzG+tr6DlGWufJkEWQp/tjgyMBJPF+fWrhj4XSZeSlwJgaFIhyioY7gHvS3moYyK6TRO6JN0b0mzd6HOgIbEBK/gp7fzsOBGMLUX2Z+bWvvnb1T3sd2fYFbDgoET8/56UTqKEBrizDIeY1463tae1BGObeq9qrlBtXb4aRcmVvCmOjneFq+UFZW9lJ3Q3fee9lSmgAUBwUNd+N9CPjfTfDHO0pO+z1FK081nfpUoUuIuKPPD322Gav5OMjWBCURRBGN4GH0QCGvxSwHhcFguPLnGEip97AKXd5y39dPN5yOy4PaYXGrjKToRsTMIzg4M+38cZz+LNYWe8qZp1Izh0QlEVLfctMmzNb6gCP4GGxFcij5W7usHT++NjaI4uHpadr0KkbpZvAH7DKw9iRi98lsejbFcQWF2LJ/LvOe6Yl14m5eLavhU8gqkQdlWj5YnOSL+sXNWNFNmKT1NQsLkGAez3zcIHmfj44rKAYUd2Jxcek6HCP1cHD+Ig5DzonZnT3WdOyCWFGukRUIwkGTL069kdYz319MmlOf00EhjKpiWKPku7IiDF9X3RHMecvIsjIsPqdh1ewO3SXLOMF5HRQKvS39h5GNOmVlnZP1Mu4W9pZ5/4TDZh0ybHkt3iKOqcm0OaWDQpB52DZTQfQo+Vtl3C08kQGO2OStYtlGz6CuHJxZO3MPYnHYMsDJVSKpW3ghAOXKsxaPoup86q4c7F7cncSyHZANGen0Shl3C+PSPy/L4qmZ97525aAwiMLgQ8Uwp8tl3C2MASff00KJMRW3GXLtIFbwY1kXp/kaGXcL42AoDqHit6p5JxuuHfQwj1IvIhFO9QhyGk/QpskM/C3Gyo0y3YRdOzgnNOcTHJS0qYgVrBIfLE28gF75ToN3bySfrmsHM68tTo7JxuKJ+PUyPhWcqbQ5XarI+TRlZxQeENcOjitS5dMc5/oqu8F8+ODI4FrEoPVpBTfL8akK2YIc9DCiFAkoyTbUdNSU5XPK5Im/MQPeZOKZnpNdCu6AFOTgrJLZO2FDrogrUjyxPbQ/VOxgWyG9Fn71h6hoJkMC8exlvl8qQg6I66rE1A22Vz6PEuwZExe92CrQtmmU72U+fzQ9K/15XV1dsuudrhlc50t0XX8Izq1TdAh5I9rWf69Mc4ILdlCU9kNDn32ICvZS0wySAY2W+shSUdw6OSXTCtpioSgePZrPeydWTUncstF8MPRw1dFvunFO2CnYQaGEk3cSn8iWYyVeBGoImqtG6RHxQsQfEJVskE+34C22GxOfb8fiY40owtaAJ0qnciTxcvSlE7VfBPX3IQ8lb/U2R3dgBRGu7tt/AYJkZEGv/oaXAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.rich_media_global_msg.voice .icon_more{position:absolute;right:15px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.preview_appmsg .rich_media_title{margin-top:1.9em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}.pages_reset{color:#3e3e3e;line-height:1.6;font-size:16px;font-weight:400;font-style:normal;text-indent:0;letter-spacing:normal;text-align:left;text-decoration:none;white-space:normal}.weapp_element,.weapp_display_element,.mp-miniprogram{display:block;margin:1em 0}.share_audio_context{margin:16px 0}.weapp_text_link{font-size:17px}.weapp_text_link:before{content:'';display:inline-block;line-height:1;background-size:12px 12px;background-repeat:no-repeat;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUAAAB4it11h9x2h9x2h9x2htx8j+R8i+B1h9x2h9x3h92Snv91htt2h9x1h9x4h9x1h9x1h9x2idx1h9t2h9t1htt1h9x1h9x1htx2h9x1h912h9x4h913iN17juOOjuN1iNx2h9t4h958i+B1htvejBiPAAAAJHRSTlMALPLcxKcVEOXXUgXtspU498sx69DPu5+Yc2JeRDwbCYuIRiGBtoolAAAA3ElEQVQoz62S1xKDIBBFWYiFYImm2DWF///G7DJEROOb58U79zi4O8iOo8zuCRfV8EdFgbYE49qFQs8ksJInajOA1wWfYvLcGSueU/oUGBtPpti09uNS68KTMcrQ5jce4kmN/HKn9XVPAo702JEdx9hTUrWUqVrI3KwUmM1NhIWMKdwiGvpGMWZOAj1PZuzAxHwhVSplrajoseBnbyDHAwvrtvKKhdqTtFBkL8wO5ijcsS3G1JMNvQ5mdW7fc0x0+ZcnlJlZiflAomdEyFaM7qeK2JahEjy5ZyU7jC/q/Rz/DgqEuAAAAABJRU5ErkJggg==');vertical-align:middle;font-size:11px;color:#888;border-radius:10px;background-color:#f4f4f4;margin-right:6px;margin-top:-4px;background-position:center;height:20px;width:20px}.weui-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.6)}.weui-dialog{position:fixed;z-index:5000;width:80%;max-width:300px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#fff;text-align:center;border-radius:3px;overflow:hidden}.weui-dialog__hd{padding:1.3em 1.6em .5em}.weui-dialog__title{font-weight:400;font-size:18px}.weui-dialog__bd{padding:0 1.6em .8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999}.weui-dialog__bd:first-child{padding:2.7em 20px 1.7em;color:#353535}.weui-dialog__ft{position:relative;line-height:48px;font-size:18px;display:-webkit-box;display:-webkit-flex;display:flex}.weui-dialog__ft:after{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.weui-dialog__btn{display:block;-webkit-box-flex:1;-webkit-flex:1;flex:1;color:#3cc51f;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:relative}.weui-dialog__btn:active{background-color:#eee}.weui-dialog__btn:after{content:" ";position:absolute;left:0;top:0;width:1px;bottom:0;border-left:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleX(0.5);transform:scaleX(0.5)}.weui-dialog__btn:first-child:after{display:none}.weui-dialog__btn_default{color:#353535}.weui-dialog__btn_primary{color:#0bb20c}</style>
+<style>
+        </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg">
+        
+<script nonce="1701763053" type="text/javascript">
+    var write_sceen_time = (+new Date());
+</script>
+
+<div id="js_article" class="rich_media">
+    <div class="rich_media_inner">
+                        
+        
+        <div id="page-content" class="rich_media_area_primary">
+            
+                        <div id="img-content">
+                
+                <h2 class="rich_media_title" id="activity-name">
+                    《每天5分钟玩转 OpenStack》教程目录                                    </h2>
+                <div id="meta_content" class="rich_media_meta_list">
+                                                            <em id="post-date" class="rich_media_meta rich_media_meta_text">2017-11-21</em>
+
+                                        <em class="rich_media_meta rich_media_meta_text">CloudMan</em>
+                                        <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="##" id="post-user">CloudMan</a>
+                    <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">CloudMan</span>
+
+
+                    <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                        <div class="profile_inner">
+                            <strong class="profile_nickname">CloudMan</strong>
+                            <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                            <p class="profile_meta">
+                            <label class="profile_meta_label">微信号</label>
+                            <span class="profile_meta_value">cloudman6</span>
+                            </p>
+
+                            <p class="profile_meta">
+                            <label class="profile_meta_label">功能介绍</label>
+                            <span class="profile_meta_value">云计算深度实践者；定期发布《每天5分钟玩转OpenStack》教程；让 OpenStack 不再难学！</span>
+                            </p>
+                            
+                        </div>
+                        <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                            <i class="profile_arrow arrow_out"></i>
+                            <i class="profile_arrow arrow_in"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                
+                
+                
+                                                
+                                <div class="rich_media_thumb_wrp" id="media">
+                    
+                                        <script nonce="1701763053">
+                        (function(){
+                            var cover = "http://mmbiz.qpic.cn/mmbiz/Hia4HVYXRicqHMqMSRSQ4cVsPpNCwpd2dHrcfXP1icH6waETel0hY1sZziajUdiaXZicibMic2ay4NBLnXYqX36QMPNlIw/0?wx_fmt=png";
+                            document.write('<img class="rich_media_thumb" id="js_cover" onerror="this.parentNode.removeChild(this)" data-backsrc='+ cover +'  data-src="' + cover + '" />');
+                        })();
+                    </script>
+                                    </div>
+                                                
+                
+                <div class="rich_media_content " id="js_content">
+                    
+
+                    
+
+                    
+                    
+                    <p><span style="line-height: 25.6px;"></span></p><p style="white-space: normal;"><span style="color: rgb(56, 58, 66);font-size: 20px;"><strong>书籍：</strong></span><br style="color: rgb(56, 58, 66);"  /><span data-mce-style="font-size: 16px;" style="color: rgb(56, 58, 66);font-size: 16px;">《每天5分钟玩转OpenStack》</span><br style="color: rgb(56, 58, 66);"  /><span data-mce-style="font-size: 16px;" style="color: rgb(56, 58, 66);font-size: 16px;">https://item.jd.com/12086376.html（点击 “阅读原文” 直达）</span></p><p style="white-space: normal;"><span data-mce-style="font-size: 16px;" style="color: rgb(56, 58, 66);font-size: 16px;"><br  /></span></p><p style="white-space: normal;"><br  /></p><p><span style="line-height: 1.6;">001 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587972&amp;idx=1&amp;sn=4ad5198dc29dd7ef3257247fdd674e5f&amp;chksm=8d30821dba470b0b6b55c1dd6fbf6cce6727346aad86e02194946fa5089f840507268df7a995&amp;scene=21#wechat_redirect" target="_blank"><span style="line-height: 25.6px;">写在最前面</span></a></p><p><br  /></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDown(&#39;shifu_t_002&#39;)" style="margin: 1em auto;padding-top: 0.5em;padding-bottom: 0.5em;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 100%;"><span class="color" style="width: 100%;border-top: 1px solid rgb(0, 88, 156);border-color: rgb(0, 88, 156);display: inline-block;"><section class="color2" style="min-height: 32px;color: rgb(255, 255, 255);display: inline-block;border-bottom-left-radius: 10px;padding: 5px 10px;border-bottom-right-radius: 10px;font-size: 20px;background-color: rgb(0, 88, 156);"><p><strong>第 1 部分 &nbsp;预备知识</strong></p></section></span></section><p><br  /></p><section label="Copyright © 2015 playhudong All Rights Reserved." style="border-width: initial;border-style: none;border-color: initial;margin: 1em auto;text-align: center;width: 18em;" donone="shifuMouseDownPayStyle(&#39;shifu_pay_002&#39;)"><section style="display: inline-block;text-align: left;background-color: rgb(229, 229, 229);"><section class="color1" style="height: 1.8em;min-width: 1em;font-size: 1.125em;vertical-align: bottom;line-height: 1.8em;text-align: center;padding-right: 0.5em;padding-left: 0.5em;color: rgb(255, 255, 255);display: inline-block;background-color: rgb(0, 88, 156);"><p><strong>第 1 章</strong></p></section><section style="border-style: solid;border-width: 0.4em 0.5em 0.4em 0px;border-color: transparent rgb(229, 229, 229) transparent transparent;vertical-align: middle;margin-left: -0.4em;display: inline-block;"></section><section style="height: 1.8em;text-align: center;line-height: 1.8em;font-size: 1.125em;padding-right: 0.8em;padding-left: 0.5em;vertical-align: middle;display: inline-block;"><p><strong>虚拟化</strong></p></section></section></section><p class="shifubrush"><span style="line-height: 1.6;">002 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587970&amp;idx=1&amp;sn=eeabd0d69d51a725b46a6fc773544773&amp;chksm=8d30821bba470b0d03dbf113fb19564c82592bef0d168c3971341abdc72bd4e91c28d0e92d36&amp;scene=21#wechat_redirect" target="_blank">虚拟化</a></span><br  /></p><p>003 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587966&amp;idx=1&amp;sn=5fc6bcefa7c2904923423d31ded39742&amp;chksm=8d3081e7ba4708f14fbb5a95362428361f156240826c731b41eeca8f592fbde2163abaa83837&amp;scene=21#wechat_redirect" target="_blank">准备 KVM 实验环境</a></p><p>004 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587959&amp;idx=1&amp;sn=9bbc07328be70b2cc1a7d3e74563877a&amp;chksm=8d3081eeba4708f8b684ee5d296600085a480b20bbf2e33989def18aa4678346af860c6c8f59&amp;scene=21#wechat_redirect" target="_blank">启动第一个 KVM 虚机</a></p><p>005 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587996&amp;idx=1&amp;sn=096b9df0df5442ab0f7e5461c8427ee2&amp;chksm=8d308205ba470b13d4c136a427da733b3405ac2a091385fee3006d9363a1ba40ba562e9a559b&amp;scene=21#wechat_redirect" target="_blank">远程管理 KVM 虚机</a></p><p>006 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587954&amp;idx=1&amp;sn=9a0ca8998f1a03f4539bfa2778bfb7ea&amp;chksm=8d3081ebba4708fd8d67560cedd0d28d8bbd74184febd500707f8c0d09f6c38d8841b1f617ec&amp;scene=21#wechat_redirect" target="_blank">CPU 和内存虚拟化原理</a></p><p>007 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587944&amp;idx=1&amp;sn=53227073729715d317643fe9a09ef211&amp;chksm=8d3081f1ba4708e76d5ef08c16486f39ffe5a07c315f13a61d76f3485da1e23f1938a5dd6256&amp;scene=21#wechat_redirect" target="_blank">KVM 存储虚拟化</a></p><p><span style="line-height: 25.6px;">008 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587938&amp;idx=1&amp;sn=298e94c7d294957415af9468f1315a55&amp;chksm=8d3081fbba4708ed21333c5cc9a643424ae967867a90ec69edb5f149b6de93c31df486f41037&amp;scene=21#wechat_redirect" target="_blank">LVM 类型的 Storage Pool</a></p><p><span style="line-height: 25.6px;">009 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587933&amp;idx=1&amp;sn=958532f257d5b4ba575f297a0b66db25&amp;chksm=8d3081c4ba4708d2199ddfaa151e93da2905eab86e963f194d1a7f90bb77535e5de5b7f83d52&amp;scene=21#wechat_redirect" target="_blank">KVM 网络虚拟化基础</a></p><p><span style="line-height: 25.6px;">010 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587932&amp;idx=1&amp;sn=d8442e02c9d19114ed2a64b3375b07f6&amp;chksm=8d3081c5ba4708d326b27352349a01c2f2175c0cc7d56944f40af2fc2c64ffdc9a5548f1b89e&amp;scene=21#wechat_redirect" target="_blank">动手实践虚拟网络</a></p><p><span style="line-height: 25.6px;">011 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587925&amp;idx=1&amp;sn=13bc307ede2bcbfea15d9e2848680fa4&amp;chksm=8d3081ccba4708da3bb35c13788234640548bcc3d8fb8b880a248c8dcb8bf9a9e6504e804406&amp;scene=21#wechat_redirect" target="_blank"><span style="line-height: 25.6px;">理解 virbr0</span></a></p><p><span style="line-height: 25.6px;"><span style="line-height: 25.6px;">012 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587920&amp;idx=1&amp;sn=79332fb8fd8370b8d6b7d9728c383008&amp;chksm=8d3081c9ba4708df9fcff17839e3c0fbb53a82298799c15ee45889f830a0087a46672505f115&amp;scene=21#wechat_redirect" target="_blank"><span style="line-height: 25.6px;">Linux 如何实现 VLAN</span></a></span></p><p><span style="line-height: 25.6px;"><span style="line-height: 25.6px;">013 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587914&amp;idx=1&amp;sn=9a584117a38f8b8ef525c3cae109d0c8&amp;chksm=8d3081d3ba4708c56d86224450f47eb8611714ef1b441afe275fc169671bdc6d9ae0494921ff&amp;scene=21#wechat_redirect" target="_blank">动手实践 Linux VLAN</a></span></span></p><p><span style="line-height: 25.6px;"><span style="line-height: 25.6px;">014 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587913&amp;idx=1&amp;sn=19ce58335a505323a4aecb593c55fa63&amp;chksm=8d3081d0ba4708c678445b7bae77fd4a6b0c8c02bf92e2a75352823467e945783a617930ec7f&amp;scene=21#wechat_redirect" target="_blank">云计算与 OpenStack</a></span></span></p><p><span style="line-height: 25.6px;"><span style="line-height: 25.6px;"><br  /></span></span></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDown(&#39;shifu_t_002&#39;)" style="margin: 1em auto;padding-top: 0.5em;padding-bottom: 0.5em;line-height: 25.6px;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 556px;"><span class="color" style="width: 556px;border-top: 1px solid rgb(0, 88, 156);border-color: rgb(0, 88, 156);display: inline-block;"><section class="color2" style="padding: 5px 10px;min-height: 32px;color: rgb(255, 255, 255);display: inline-block;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;font-size: 20px;background-color: rgb(0, 88, 156);"><p><strong>第 2 部分 &nbsp;OpenStack 核心</strong></p></section></span></section><p style="line-height: 25.6px;white-space: normal;"><br  /></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDownPayStyle(&#39;shifu_pay_002&#39;)" style="margin: 1em auto;line-height: 25.6px;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 18em;"><section style="display: inline-block;text-align: left;background-color: rgb(229, 229, 229);"><section class="color1" style="padding-right: 0.5em;padding-left: 0.5em;height: 1.8em;min-width: 1em;font-size: 1.125em;vertical-align: bottom;line-height: 1.8em;text-align: center;color: rgb(255, 255, 255);display: inline-block;background-color: rgb(0, 88, 156);"><p><strong>第 2 章</strong></p></section><section style="margin-left: -0.4em;border-style: solid;border-width: 0.4em 0.5em 0.4em 0px;border-color: transparent rgb(229, 229, 229) transparent transparent;vertical-align: middle;display: inline-block;"></section><section style="padding-right: 0.8em;padding-left: 0.5em;height: 1.8em;text-align: center;line-height: 1.8em;font-size: 1.125em;vertical-align: middle;display: inline-block;"><p><strong>OpenStack 架构</strong></p></section></section></section><p><br  /></p><p class="shifubrush" style="line-height: 25.6px;white-space: normal;"><span style="line-height: 25.6px;">015 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587909&amp;idx=1&amp;sn=b1297dc5cb49323a36a367122c1b1c4f&amp;chksm=8d3081dcba4708ca61eacafb9d312e8278cbe380a00f01cc8f7cdba0bc1da1797f90df133051&amp;scene=21#wechat_redirect" target="_blank">OpenStack 架构</a></span></p><p class="shifubrush" style="line-height: 25.6px;white-space: normal;"><span style="line-height: 25.6px;"><span style="line-height: 25.6px;">016 -&nbsp;</span></span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587901&amp;idx=1&amp;sn=21a38340604708a11f1d203b5500ccfb&amp;chksm=8d3081a4ba4708b292d285cddf18455870a28a2a7585b73d21507529e71fcc8c683a8c0169c2&amp;scene=21#wechat_redirect" target="_blank">搭建 OpenStack 实验环境</a></p><p class="shifubrush" style="line-height: 25.6px;white-space: normal;"><span style="line-height: 25.6px;"><span style="line-height: 25.6px;"><span style="line-height: 25.6px;">017 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587900&amp;idx=1&amp;sn=7b46cb4798e405cfdc053135cbf8d040&amp;chksm=8d3081a5ba4708b3f9152c359e46cc2abb6d58f64c108aadc44c20138e988d17a6c754559411&amp;scene=21#wechat_redirect" target="_blank">部署 DevStack</a></span></span></span></p><p class="shifubrush" style="line-height: 25.6px;white-space: normal;"><span style="line-height: 25.6px;"><span style="line-height: 25.6px;"></span></span></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDownPayStyle(&#39;shifu_pay_002&#39;)" style="margin: 1em auto;line-height: 25.6px;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 18em;"><section style="display: inline-block;text-align: left;background-color: rgb(229, 229, 229);"><section class="color1" style="padding-right: 0.5em;padding-left: 0.5em;height: 1.8em;min-width: 1em;font-size: 1.125em;vertical-align: bottom;line-height: 1.8em;text-align: center;color: rgb(255, 255, 255);display: inline-block;background-color: rgb(0, 88, 156);"><p><strong>第 3 章</strong></p></section><section style="margin-left: -0.4em;border-style: solid;border-width: 0.4em 0.5em 0.4em 0px;border-color: transparent rgb(229, 229, 229) transparent transparent;vertical-align: middle;display: inline-block;"></section><section style="padding-right: 0.8em;padding-left: 0.5em;height: 1.8em;text-align: center;line-height: 1.8em;font-size: 1.125em;vertical-align: middle;display: inline-block;"><p><strong>Keystone</strong></p><p><strong><br  /></strong></p></section></section></section><p class="shifubrush" style="line-height: 25.6px;white-space: normal;"><span style="line-height: 25.6px;"><span style="line-height: 25.6px;"></span></span><br  /></p><p>018 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587894&amp;idx=1&amp;sn=877a9cb2c23f242e45e7c113f2d2440f&amp;chksm=8d3081afba4708b9295debc08ac8159927733a1429a5f488ce136370984be15e6039b3496b46&amp;scene=21#wechat_redirect" target="_blank">理解 Keystone 核心概念</a></p><p>019 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587874&amp;idx=1&amp;sn=59be95c265063933d36c0ee3f9f78a69&amp;chksm=8d3081bbba4708ada5a627b570789c650164a2d2237edc6ee759b4650be98bf4f0d335c93cac&amp;scene=21#wechat_redirect" target="_blank">通过例子学习 Keystone</a></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDownPayStyle(&#39;shifu_pay_002&#39;)" style="margin: 1em auto;line-height: 25.6px;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 18em;"><section style="display: inline-block;text-align: left;background-color: rgb(229, 229, 229);"><section class="color1" style="padding-right: 0.5em;padding-left: 0.5em;height: 1.8em;min-width: 1em;font-size: 1.125em;vertical-align: bottom;line-height: 1.8em;text-align: center;color: rgb(255, 255, 255);display: inline-block;background-color: rgb(0, 88, 156);"><p><strong>第 4 章</strong></p></section><section style="margin-left: -0.4em;border-style: solid;border-width: 0.4em 0.5em 0.4em 0px;border-color: transparent rgb(229, 229, 229) transparent transparent;vertical-align: middle;display: inline-block;"></section><section style="padding-right: 0.8em;padding-left: 0.5em;height: 1.8em;text-align: center;line-height: 1.8em;font-size: 1.125em;vertical-align: middle;display: inline-block;"><p><strong>Glance</strong></p><p><strong><br  /></strong></p></section></section></section><p>020 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587873&amp;idx=1&amp;sn=25bddda6a99eaec77341ae5dc722c7ac&amp;chksm=8d3081b8ba4708aeed0b583eb58474f5e45af49e490cbfd1ffea6c533e7a7b306c69b4894b1b&amp;scene=21#wechat_redirect" target="_blank">理解 Glance</a><br  /><span style="line-height: 25.6px;">021 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587867&amp;idx=1&amp;sn=268e086d31e3a68ed6ed636581f6056b&amp;chksm=8d308182ba470894267946afbc4264d99d4235fcf76072a3bbbb4ff9a3b8e0c8026b9b2ce264&amp;scene=21#wechat_redirect" target="_blank">创建 Image</a></p><p><span style="line-height: 25.6px;">022 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587860&amp;idx=1&amp;sn=1e09cd2a22c1085d518470003900448e&amp;chksm=8d30818dba47089b7993b371ba02be36d1ee8bbc7352a58ff7caadeb16e93b33047f82f7fd7e&amp;scene=21#wechat_redirect" target="_blank">如何使用 OpenStack CLI</a></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDownPayStyle(&#39;shifu_pay_002&#39;)" style="margin: 1em auto;line-height: 25.6px;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 18em;"><section style="display: inline-block;text-align: left;background-color: rgb(229, 229, 229);"><section class="color1" style="padding-right: 0.5em;padding-left: 0.5em;height: 1.8em;min-width: 1em;font-size: 1.125em;vertical-align: bottom;line-height: 1.8em;text-align: center;color: rgb(255, 255, 255);display: inline-block;background-color: rgb(0, 88, 156);"><p><strong>第 5 章</strong></p></section><section style="margin-left: -0.4em;border-style: solid;border-width: 0.4em 0.5em 0.4em 0px;border-color: transparent rgb(229, 229, 229) transparent transparent;vertical-align: middle;display: inline-block;"></section><section style="padding-right: 0.8em;padding-left: 0.5em;height: 1.8em;text-align: center;line-height: 1.8em;font-size: 1.125em;vertical-align: middle;display: inline-block;"><p><strong>Nova</strong></p><p><strong><br  /></strong></p></section></section></section><p style="line-height: 25.6px;white-space: normal;">023 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587855&amp;idx=1&amp;sn=06cc0f77ed94ec69b983d27a0e657b13&amp;chksm=8d308196ba4708809892f84dc6367cade3864b1ba7fec89d792a8baefe3c00fb80b74557f720&amp;scene=21#wechat_redirect" target="_blank">理解 Nova 架构</a><br  /><span style="line-height: 25.6px;">024 -&nbsp;</span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587854&amp;idx=1&amp;sn=35081eb34c80286a5559d8df50dc2492&amp;chksm=8d308197ba47088195cee8bd206b89e5f086e1fdc3de95f4ab8a6afd42ef2d30b78abed14d24&amp;scene=21#wechat_redirect" target="_blank">Nova 组件如何协同工作</a><br  />025 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587849&amp;idx=1&amp;sn=5b9b0805aac68436d97c13a5fd17eb85&amp;chksm=8d308190ba4708865c97c29b8fbc1ca5d9ba9abbcf4f2daaf6803a306bc8d9dd36a8efb91fcc&amp;scene=21#wechat_redirect" target="_blank">OpenStack 通用设计思路</a></p><p>026 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653588015&amp;idx=1&amp;sn=69e7450f9d05f341f0095032c0f874de&amp;chksm=8d308236ba470b20f7bb4442f14c5402cae47666dd419aff45409bdfb7e6fcd2a1c16d60d375&amp;scene=21#wechat_redirect" target="_blank">Nova 组件详解</a></p><p>027 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587839&amp;idx=1&amp;sn=93f155405b8485ab9bccb65941340a67&amp;chksm=8d308166ba470870de70fefb0fa2f35da7933fbcdf45aad81e36084d5e14253749b618628c7c&amp;scene=21#wechat_redirect" target="_blank">看 nova-scheduler 如何选择计算节点</a></p><p>028 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587838&amp;idx=1&amp;sn=d9086010c7c1b6d2cf7bb5668dae6e00&amp;chksm=8d308167ba47087114eeeac94add3dc9f642501fd22975b57fb193c92bd0b303375a046fff37&amp;scene=21#wechat_redirect" target="_blank">nova-compute 部署 instance 详解</a></p><p>029 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587833&amp;idx=1&amp;sn=737ecf034c0b8df2b41a2e8cbb5430f2&amp;chksm=8d308160ba470876c0595af5d7fdb788d0b0c0022d1eb2598e013d97d00f9b361589e1ac37d8&amp;scene=21#wechat_redirect" target="_blank">教你看懂 OpenStack 日志</a></p><p>030 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587828&amp;idx=1&amp;sn=c88414eb558550f9744604bad7577b0b&amp;chksm=8d30816dba47087b1403b5efc346f283686b716761b9553acc78ed2856daf611a027ca9bbc15&amp;scene=21#wechat_redirect" target="_blank">Launch和Shut Off操作详解</a></p><p>031 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587823&amp;idx=1&amp;sn=3a5b6c363305834c75c61c00203f2c18&amp;chksm=8d308176ba4708602c7b12e36cfec360a3562095dba3f62ae1a8287b3c6bb18bebca701edb21&amp;scene=21#wechat_redirect" target="_blank">Start Instance 操作详解</a></p><p>032 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587822&amp;idx=1&amp;sn=00e2326d52085183151918d44c4282b6&amp;chksm=8d308177ba470861d155811eeba17f062b8ba7df9e769b047d476e1080a5680beb6c8cf7d273&amp;scene=21#wechat_redirect" target="_blank">Nova reboot 和 lock 操作</a></p><p>033 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587817&amp;idx=1&amp;sn=7456536fdd16bfbb8ff617ac951755e4&amp;chksm=8d308170ba470866cf972de7c27084ff3ecabfa9c2ce2dba3f14ba2b2d9aea1b8f84ca8020f1&amp;scene=21#wechat_redirect" target="_blank">Terminate Instance 操作详解</a></p><p>034 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587812&amp;idx=1&amp;sn=db9083a4e386026e55783dc0affb73b2&amp;chksm=8d30817dba47086b9c88043e66abad34bfc913ea925b36778503f69fd47b7953c909b0d28849&amp;scene=21#wechat_redirect" target="_blank">Pause/Resume Instance 操作详解</a></p><p>035 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587807&amp;idx=1&amp;sn=b09e62dfd9576e6d19458afe96b1d4a0&amp;chksm=8d308146ba4708501602e00169688f962a852e24ba68d02ae67cbe3252660fd95214ae401f43&amp;scene=21#wechat_redirect" target="_blank">Suspend/Rescue Instance 操作详解</a></p><p>036 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587805&amp;idx=1&amp;sn=63957d4a93517d3ac98a4226db4adbda&amp;chksm=8d308144ba4708523ce4512849e237f74c17cb5a1ecb1a7339dfb9b49dc018a5ecab6335ec35&amp;scene=21#wechat_redirect" target="_blank">Snapshot Instance 操作详解</a></p><p>037 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587800&amp;idx=1&amp;sn=2cf91456279a254226722974952379ef&amp;chksm=8d308141ba470857dd130a8db9387371ae928a7fe841b6cc6608c8f59b0f949fae69719f2be3&amp;scene=21#wechat_redirect" target="_blank">Rebuild Instance 操作详解</a></p><p>038 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587796&amp;idx=1&amp;sn=40be4aba68905546241ac9955d993e63&amp;chksm=8d30814dba47085b405682b9b21707590d0260dfdc33b256be62b0ab7204e36f6ba3baea289d&amp;scene=21#wechat_redirect" target="_blank">Shelve Instance 操作详解</a></p><p>039 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587792&amp;idx=1&amp;sn=7a69817b99c46538293dbc29f06b7806&amp;chksm=8d308149ba47085fbd5d4f0c5bce4543ca043687f4769c73703d71a2a4ea3a38d4eed31e4f66&amp;scene=21#wechat_redirect" target="_blank">Unshelve Instance 操作详解</a></p><p>040 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587791&amp;idx=1&amp;sn=6a2c8535f6e73ce3dc42c255b4019665&amp;chksm=8d308156ba4708403d9b941cc49de5a3aba849d10fea0ecf3c2bd0da176910dcb491ec158467&amp;scene=21#wechat_redirect" target="_blank">Migrate Instance 操作详解</a></p><p>041 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587787&amp;idx=1&amp;sn=3b1503699b9cfd1efc42233a04f69cfc&amp;chksm=8d308152ba47084495f66aad0338d6780ab009527bf92666c53c08682d3fb1443846d0331cf9&amp;scene=21#wechat_redirect" target="_blank">Resize Instance 操作详解</a></p><p>042 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587782&amp;idx=1&amp;sn=e9b08fde010d86af6f2e1ee45ff4d2f3&amp;chksm=8d30815fba470849fa854cb5718327b2c27c3c998108cfb3ac5ecaf377a33d4486f64b785130&amp;scene=21#wechat_redirect" target="_blank">Live Migrate 操作</a></p><p>043 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587778&amp;idx=1&amp;sn=c63c96bb83a201fcb42d26b032089513&amp;chksm=8d30815bba47084d4b92b72bc250c358a31f280fb74c1c0a020f1dffde3cc2f89396e9df4455&amp;scene=21#wechat_redirect" target="_blank">计算节点宕机了怎么办？</a></p><p>044 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587777&amp;idx=1&amp;sn=47bc06f6b34092ab05fdec0c6a70c76d&amp;chksm=8d308158ba47084eaa4173bbaaaa1682930c865f4935db1b71fcf88105d7e152e1e0ee63abd8&amp;scene=21#wechat_redirect" target="_blank">1 张图秒懂 Nova 16 种操作</a></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDownPayStyle(&#39;shifu_pay_002&#39;)" style="margin: 1em auto;line-height: 25.6px;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 18em;"><section style="display: inline-block;text-align: left;background-color: rgb(229, 229, 229);"><section class="color1" style="padding-right: 0.5em;padding-left: 0.5em;height: 1.8em;min-width: 1em;font-size: 1.125em;vertical-align: bottom;line-height: 1.8em;text-align: center;color: rgb(255, 255, 255);display: inline-block;background-color: rgb(0, 88, 156);"><p><strong>第 6 章</strong></p></section><section style="margin-left: -0.4em;border-style: solid;border-width: 0.4em 0.5em 0.4em 0px;border-color: transparent rgb(229, 229, 229) transparent transparent;vertical-align: middle;display: inline-block;"></section><section style="padding-right: 0.8em;padding-left: 0.5em;height: 1.8em;text-align: center;line-height: 1.8em;font-size: 1.125em;vertical-align: middle;display: inline-block;"><p><strong>Cinder</strong></p><p><strong><br  /></strong></p></section></section></section><p><span style="line-height: 1.6;">045 - </span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587772&amp;idx=1&amp;sn=954e666642745bd056988e1d18650ba3&amp;chksm=8d308125ba47083304deed6d63c06ec8b645fee60f319b6885d496449bd4bcbcda36bd343735&amp;scene=21#wechat_redirect" target="_blank"><span style="line-height: 1.6;">理解 Cinder 架构</span></a><span style="line-height: 1.6;">&nbsp;</span><br  /></p><p>046 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587767&amp;idx=1&amp;sn=e3535a2ccf793e5591d633cbd9d5879c&amp;chksm=8d30812eba470838464262dc60bed1b50c4ad63342a7dae3a7b1af08ab4effcd463efbbe7209&amp;scene=21#wechat_redirect" target="_blank">掌握 Cinder 设计思想</a></p><p>047 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587763&amp;idx=1&amp;sn=1374e3e2bcc453b782f0eb8a78f46ad6&amp;chksm=8d30812aba47083cbe1f0aa93b3eff408590397eb2c88fe040eafd15b04888d0d1d116405d18&amp;scene=21#wechat_redirect" target="_blank">Cinder 组件详解</a></p><p>048 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587762&amp;idx=1&amp;sn=d02474b44fa215bd5d270ff1025d31ae&amp;chksm=8d30812bba47083d67772f8b2f6a4a0793ed4f41ca2c6140e356508d7c760abafb7925884f4e&amp;scene=21#wechat_redirect" target="_blank">掌握 cinder-scheduler 调度逻辑</a></p><p>049 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587757&amp;idx=1&amp;sn=d737b4fcd5866538dcd41acb3b395d61&amp;chksm=8d308134ba470822f6c86aa7d9e6e547e29bc96afbf0eae972f97df14c244f525b155ec14a9f&amp;scene=21#wechat_redirect" target="_blank">准备 LVM Volume Provider</a></p><p>050 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587753&amp;idx=1&amp;sn=275a76dc2e8324f6445977da52b8eb34&amp;chksm=8d308130ba4708263f408f4244e01736281d0f5e2313c835a73608d530d0c35fcc4e994d1f30&amp;scene=21#wechat_redirect" target="_blank">Create Volume 操作（Part I）</a></p><p>051 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587752&amp;idx=1&amp;sn=d993ec33da9ad0624f6dbc7fe07b74bb&amp;chksm=8d308131ba4708274fd76663651892f5f8cf1ff2b01919cf70c6fa5904fadcf6c232c9c620e9&amp;scene=21#wechat_redirect" target="_blank">Create Volume 操作（Part II）</a></p><p>052 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587747&amp;idx=1&amp;sn=eef8144ed8b7fa806da09296bb2f7123&amp;chksm=8d30813aba47082cbd3c283654ae92937df4b5033059875fb8e4808bdbb2b410e33f42104809&amp;scene=21#wechat_redirect" target="_blank">Create Volume 操作（Part III）</a></p><p>053 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587743&amp;idx=1&amp;sn=b180de0f491d27f9dae8de9a4ef13a5d&amp;chksm=8d308106ba47081089c6bf817880f842270526f872965a64ce69ba458193d90dc69e6bf93596&amp;scene=21#wechat_redirect" target="_blank">Attach Volume 操作（Part I）</a></p><p>054 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587739&amp;idx=1&amp;sn=5f23fdf07800f25491535dc5c6bc1cb0&amp;chksm=8d308102ba470814e40be7523b8769a3630959991f75562541b13b4e6ad80f962aba6c36be26&amp;scene=21#wechat_redirect" target="_blank">Attach Volume 操作（Part II）</a></p><p>055 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587735&amp;idx=1&amp;sn=f7e723c2d1f8cdf79f90d73644859b5d&amp;chksm=8d30810eba47081803815e0d67655a142e297f78f641bbe66b53749ba8903de20783eafef1c8&amp;scene=21#wechat_redirect" target="_blank">Detach Volume 操作</a></p><p>056 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587731&amp;idx=1&amp;sn=207042140109e75cf018c05f556d384a&amp;chksm=8d30810aba47081c3a516f8a7a35618bd9ccb1b9bc0fe5950a59425cdf58d3b580e5ca064feb&amp;scene=21#wechat_redirect" target="_blank">Extend Volume 操作</a></p><p>057 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587727&amp;idx=1&amp;sn=5cf9675b5511f683262c57ebcc30e382&amp;chksm=8d308116ba470800e6423e0d2c6222e7048b64533462a615d0f8a796b10f000732ce4b40241f&amp;scene=21#wechat_redirect" target="_blank">Delete Volume 操作</a></p><p>058 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587723&amp;idx=1&amp;sn=420fd2e261c9cf26eef68ba72e42e9c9&amp;chksm=8d308112ba47080434212847fc0a4e1c99ab60f85efda8e812f979e11d8671371cf4649c0307&amp;scene=21#wechat_redirect" target="_blank"><span style="line-height: 25.6px;white-space: pre-wrap;">Snapshot Volume 操作</span></a></p><p>059 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587722&amp;idx=1&amp;sn=7a4fcd874d6276b8d43db3e8a4fea672&amp;chksm=8d308113ba470805993c55fbaa03a66581f7c78af260add26b7097c6a7725a7104c7c7a07300&amp;scene=21#wechat_redirect" target="_blank">Backup Volume 操作</a></p><p>060 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587718&amp;idx=1&amp;sn=ac8f10bef5fe708bc0d1f682f486516e&amp;chksm=8d30811fba4708098c720dc3631e8632f14d22fcb6910acad31445438c55efcebe3019dd389c&amp;scene=21#wechat_redirect" target="_blank">Restore Volume 操作</a></p><p>061 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587712&amp;idx=1&amp;sn=9753c10f78bf51f61f7f95c92556d81e&amp;chksm=8d308119ba47080fdc42a382d180da3b9b730c5764d9bdcf793edc36c4014537f31e89fc3438&amp;scene=21#wechat_redirect" target="_blank">Boot from Volume</a></p><p>062 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587707&amp;idx=1&amp;sn=609e98574ca5e83117bd9fde55d44f2a&amp;chksm=8d3080e2ba4709f436dd2caf6ab8fc5b10a5a16b878921eb5ea4f1b5fd97f139623c540cff4d&amp;scene=21#wechat_redirect" target="_blank">NFS Volume Provider（Part I）</a></p><p>063 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587703&amp;idx=1&amp;sn=303d3f7c0a55a3058b90177e99cd338f&amp;chksm=8d3080eeba4709f8ef0b1a87bcd8e1173687127dfa4bb3c78e0443b55d8c6d26f49cb75f186c&amp;scene=21#wechat_redirect" target="_blank">NFS Volume Provider（Part II）</a></p><p>064 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587699&amp;idx=1&amp;sn=f831d506dd18b6268e4870cddcb172a8&amp;chksm=8d3080eaba4709fcca5f8945f04801410f0d0d7952d58f15bc3f66cbef55e3c3dec14290b538&amp;scene=21#wechat_redirect" target="_blank">NFS Volume Provider（Part III）</a></p><p><br  /></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDownPayStyle(&#39;shifu_pay_002&#39;)" style="margin: 1em auto;line-height: 25.6px;white-space: normal;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 18em;"><section style="display: inline-block;text-align: left;background-color: rgb(229, 229, 229);"><section class="color1" style="padding-right: 0.5em;padding-left: 0.5em;height: 1.8em;min-width: 1em;font-size: 1.125em;vertical-align: bottom;line-height: 1.8em;text-align: center;color: rgb(255, 255, 255);display: inline-block;background-color: rgb(0, 88, 156);"><p><strong>第 7 章</strong></p></section><section style="margin-left: -0.4em;border-style: solid;border-width: 0.4em 0.5em 0.4em 0px;border-color: transparent rgb(229, 229, 229) transparent transparent;vertical-align: middle;display: inline-block;"></section><section style="padding-right: 0.8em;padding-left: 0.5em;height: 1.8em;text-align: center;line-height: 1.8em;font-size: 1.125em;vertical-align: middle;display: inline-block;"><p><strong>Neutron</strong></p><p><strong><br  /></strong></p></section></section></section><p><br  /></p><p style="line-height: 25.6px;"><span style="line-height: 1.6;">065 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587695&amp;idx=1&amp;sn=17a595f7225b1cf3bb5e6b6879d6d005&amp;chksm=8d3080f6ba4709e0692ec0c9f26f4832c0ccf92b9f77b7f7c375a80940ec107aefb7fe9d9aee&amp;scene=21#wechat_redirect" target="_blank">Neutron 功能概述</a></span></p><p>066 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587708&amp;idx=1&amp;sn=f7dea80905f19bf460e1aa67c5d2453f&amp;chksm=8d3080e5ba4709f3f934ec4dd099a14f1641b0b200b2f4e2dc27ad39cbc9c58447d46436dc0d&amp;scene=21#wechat_redirect" target="_blank">Neutron 网络基本概念</a></p><p>067 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587691&amp;idx=1&amp;sn=c71b110dade71c3e120ec6b2389b3e33&amp;chksm=8d3080f2ba4709e44eb08c55223e141f7ed0e069ebd6f770b7770665e00ff72d48ce41596a0b&amp;scene=21#wechat_redirect" target="_blank">Neutron 架构</a></p><p>068 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587687&amp;idx=1&amp;sn=adf2078fa91f552a23dd406bf9c0d30d&amp;chksm=8d3080feba4709e8fca066ec1371c51f9b3a89229cfeb81f886e6895f0c2509a29e840ab6d19&amp;scene=21#wechat_redirect" target="_blank">Neutron 物理部署方案</a></p><p>069 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587683&amp;idx=1&amp;sn=3c5cadd759831abf596d53859cb64b9d&amp;chksm=8d3080faba4709ec386d03890f7ccec74a9adfb69a943466626428b237d4a3929e372496e8db&amp;scene=21#wechat_redirect" target="_blank">理解 Neutron Server 分层模型</a></p><p>070 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587682&amp;idx=1&amp;sn=bd57acc0560ce9bcdcc7781ed24067df&amp;chksm=8d3080fbba4709ed1dd5ba820daa2c845d1aff1d4cd5670b74337df386f3fbf2544ab5fb65c0&amp;scene=21#wechat_redirect" target="_blank">Neutron 如何支持多种 network provider</a></p><p>071 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587678&amp;idx=1&amp;sn=5c0b42594613c75ecc58161e9839957e&amp;chksm=8d3080c7ba4709d1693f6f4e7051e7fbbb4dde00e850c12a197ad5630587dc6427b80ed637ac&amp;scene=21#wechat_redirect" target="_blank">详解 ML2 Core Plugin（I）</a></p><p>072 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587674&amp;idx=1&amp;sn=b07b9d76cb035885b81495c68fc71deb&amp;chksm=8d3080c3ba4709d5ca82824e2ec341a76cf5c709fa9a8bd0a74c349a1efa2784f4a7923df20e&amp;scene=21#wechat_redirect" target="_blank">详解 ML2 Core Plugin（II）</a></p><p>073 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587670&amp;idx=1&amp;sn=0e1f5e078b9f323f3ad3cff4a9095f4b&amp;chksm=8d3080cfba4709d9f8356bca2cc39663e151e78b9d3656261131cbcedbd8bdcc5e31c0cbf110&amp;scene=21#wechat_redirect" target="_blank">Service Plugin / Agent</a></p><p>074 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587669&amp;idx=1&amp;sn=4054e2008bc1ec5d52d809fe68ee09b9&amp;chksm=8d3080ccba4709da29d47860a9651e90253b1194187a1c46b8f4e440a9b5613a8e4eabbe7cba&amp;scene=21#wechat_redirect" target="_blank">两张图总结 Neutron 架构</a></p><p>075 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587665&amp;idx=1&amp;sn=249116c3d240b6fcf03a6b927ef416dc&amp;chksm=8d3080c8ba4709de895e84b8f5fe35fa7e537ccfb4ae765b10ac9b2de55eb13e47e5cf1b3d1e&amp;scene=21#wechat_redirect" target="_blank">为 Neutron 准备物理基础设施（I）</a></p><p>076 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587661&amp;idx=1&amp;sn=f33f322495cac190c6574249c0797a72&amp;chksm=8d3080d4ba4709c270528ad651c1c12d0588e648a6dbea430c1ccb567230db1f1f140f1f3f26&amp;scene=21#wechat_redirect" target="_blank">为 Neutron 准备物理基础设施（II）</a></p><p>077 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587658&amp;idx=1&amp;sn=ba38096b11bd93a7fa596cd1a1696d82&amp;chksm=8d3080d3ba4709c5f492c01d7e150ad9e738b1058a9d1c2671cd04fcb56a6244832485590ab8&amp;scene=21#wechat_redirect" target="_blank">配置 linux-bridge mechanism driver</a></p><p>078 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587656&amp;idx=1&amp;sn=b84065f7d5dd1ae32eacf2aad4b93156&amp;chksm=8d3080d1ba4709c7030032a386e1ffe7d0eedd377c2fa90a1b4584832c35932f5893339ec3c5&amp;scene=21#wechat_redirect" target="_blank">实践 Neutron 前的两个准备工作</a></p><p>079 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587652&amp;idx=1&amp;sn=ba29d242fe90a328e3fb6011548e15bb&amp;chksm=8d3080ddba4709cb44947f2b9cd85658e37cb21803f8e05bb844de6275e0513a457596c878e2&amp;scene=21#wechat_redirect" target="_blank">在 ML2 中 enable local network</a></p><p>080 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587643&amp;idx=1&amp;sn=7ad568889d9f44c77d7c8e45a8fb33ff&amp;chksm=8d3080a2ba4709b4d4f26cf38f65fda3a250f2b3eebc4bb1b7d50828107f9c80cc67055cce1a&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587643&amp;idx=1&amp;sn=7ad568889d9f44c77d7c8e45a8fb33ff&amp;chksm=8d3080a2ba4709b4d4f26cf38f65fda3a250f2b3eebc4bb1b7d50828107f9c80cc67055cce1a&amp;scene=21#wechat_redirect">创建第一个 local network（I）</a></p><p>081 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587642&amp;idx=1&amp;sn=26090fbdeea9a3814574f35229715050&amp;chksm=8d3080a3ba4709b5ef186bd45dca532beae37d4a75d8cdaef0c6cd31fbaf34bb2f76fdb3b953&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587642&amp;idx=1&amp;sn=26090fbdeea9a3814574f35229715050&amp;chksm=8d3080a3ba4709b5ef186bd45dca532beae37d4a75d8cdaef0c6cd31fbaf34bb2f76fdb3b953&amp;scene=21#wechat_redirect">创建第一个 local network（II）</a></p><p>082 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587630&amp;idx=1&amp;sn=4c9495f74f3360c5ef81e73af5122eec&amp;chksm=8d3080b7ba4709a13f4f78247c8ba23b6bd17963b99bf0a7165f195b36c19d3e09baa8dd8853&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587630&amp;idx=1&amp;sn=4c9495f74f3360c5ef81e73af5122eec&amp;chksm=8d3080b7ba4709a13f4f78247c8ba23b6bd17963b99bf0a7165f195b36c19d3e09baa8dd8853&amp;scene=21#wechat_redirect">将 instance 连接到 first_local_net</a></p><p>083 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587628&amp;idx=1&amp;sn=b9777c3c831bde12fe95cc9932750069&amp;chksm=8d3080b5ba4709a35ecc0a291a9daaee86addf4822e38340abd7d92f27a9ca860eed0b5abacf&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587628&amp;idx=1&amp;sn=b9777c3c831bde12fe95cc9932750069&amp;chksm=8d3080b5ba4709a35ecc0a291a9daaee86addf4822e38340abd7d92f27a9ca860eed0b5abacf&amp;scene=21#wechat_redirect">连接第二个 insance 到 first_local_net</a></p><p>084 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587624&amp;idx=1&amp;sn=66b9ce938085f8553809d3a22a91eac2&amp;chksm=8d3080b1ba4709a75948b8955e019c292383d48200568d4d68e6fc684e0dfe65b76dc9936ce9&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587624&amp;idx=1&amp;sn=66b9ce938085f8553809d3a22a91eac2&amp;chksm=8d3080b1ba4709a75948b8955e019c292383d48200568d4d68e6fc684e0dfe65b76dc9936ce9&amp;scene=21#wechat_redirect">创建第二个 local network</a></p><p>085 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587620&amp;idx=1&amp;sn=70df7f16556e3463476a3ddd0134eb1b&amp;chksm=8d3080bdba4709abe01f33aecf317a8e14b750342a17264966f59c6ab38e58a2b1e46d2cf50c&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587620&amp;idx=1&amp;sn=70df7f16556e3463476a3ddd0134eb1b&amp;chksm=8d3080bdba4709abe01f33aecf317a8e14b750342a17264966f59c6ab38e58a2b1e46d2cf50c&amp;scene=21#wechat_redirect">将 instance 连接到 second_local_net</a></p><p>086 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587616&amp;idx=1&amp;sn=82b34a5dd13596d86db062efab6ef279&amp;chksm=8d3080b9ba4709af68582130b1c0e693653a96a7d61926912260a44b7021ee6b38f423029c91&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587616&amp;idx=1&amp;sn=82b34a5dd13596d86db062efab6ef279&amp;chksm=8d3080b9ba4709af68582130b1c0e693653a96a7d61926912260a44b7021ee6b38f423029c91&amp;scene=21#wechat_redirect">flat network 原理与配置</a></p><p>087 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587615&amp;idx=1&amp;sn=544293b740f93b7e862a62810035ea23&amp;chksm=8d308086ba4709900bb5087a438336dd6e8388ef35f1fd752695b54d33e626f64690bd818304&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587615&amp;idx=1&amp;sn=544293b740f93b7e862a62810035ea23&amp;chksm=8d308086ba4709900bb5087a438336dd6e8388ef35f1fd752695b54d33e626f64690bd818304&amp;scene=21#wechat_redirect">创建 flat network</a></p><p>088 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587611&amp;idx=1&amp;sn=1ef6ccab139e541ffc65d1c3a0c6ec11&amp;chksm=8d308082ba47099463fcf359c0f315dccf41e4d165644f58192b3eed9255d04296862f5312e3&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587611&amp;idx=1&amp;sn=1ef6ccab139e541ffc65d1c3a0c6ec11&amp;chksm=8d308082ba47099463fcf359c0f315dccf41e4d165644f58192b3eed9255d04296862f5312e3&amp;scene=21#wechat_redirect">将 instance 连接到 flat_net</a></p><p>089 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587607&amp;idx=1&amp;sn=6eaeb88edd1f82fe03c69c78ca4d4455&amp;chksm=8d30808eba470998dcdd9e8f66b492215ec054d89dcbf0b43e52064aa54d0b9ac83c36cce5ff&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587607&amp;idx=1&amp;sn=6eaeb88edd1f82fe03c69c78ca4d4455&amp;chksm=8d30808eba470998dcdd9e8f66b492215ec054d89dcbf0b43e52064aa54d0b9ac83c36cce5ff&amp;scene=21#wechat_redirect">配置 DHCP 服务</a>&nbsp;</p><p>090 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587603&amp;idx=1&amp;sn=f3155546cc93e1ebc245b5dd900c9b66&amp;chksm=8d30808aba47099c78a675d4c07efeec08043cf7e08f56c02f3c95250a1422e39431b7d30222&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587603&amp;idx=1&amp;sn=f3155546cc93e1ebc245b5dd900c9b66&amp;chksm=8d30808aba47099c78a675d4c07efeec08043cf7e08f56c02f3c95250a1422e39431b7d30222&amp;scene=21#wechat_redirect">用 namspace 隔离 DHCP 服务</a></p><p>091 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587599&amp;idx=1&amp;sn=d6172afe9207edeebfe1f9c354cf431b&amp;chksm=8d308096ba47098009461d7e0accf2c8212d703d28f0b750f10a64a29cda1e31c908057ddb3f&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587599&amp;idx=1&amp;sn=d6172afe9207edeebfe1f9c354cf431b&amp;chksm=8d308096ba47098009461d7e0accf2c8212d703d28f0b750f10a64a29cda1e31c908057ddb3f&amp;scene=21#wechat_redirect">获取 dhcp IP 过程分析</a></p><p>092 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587595&amp;idx=1&amp;sn=cd0ff4a2323bb9f65834ed06c5553188&amp;chksm=8d308092ba470984e9815952cab4bfedfd1d264ed6b5ca54d403bb675f82ca5244ce2a2ca638&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587595&amp;idx=1&amp;sn=cd0ff4a2323bb9f65834ed06c5553188&amp;chksm=8d308092ba470984e9815952cab4bfedfd1d264ed6b5ca54d403bb675f82ca5244ce2a2ca638&amp;scene=21#wechat_redirect">Neutron Vlan Network 原理</a></p><p>093 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587591&amp;idx=1&amp;sn=9b5ebb0f7df1da373ad9b98fb3a46306&amp;chksm=8d30809eba470988e1c64866f1744ab1440d09fe253ccc3a72b5bffa717b02d281c829b9a7d1&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587591&amp;idx=1&amp;sn=9b5ebb0f7df1da373ad9b98fb3a46306&amp;chksm=8d30809eba470988e1c64866f1744ab1440d09fe253ccc3a72b5bffa717b02d281c829b9a7d1&amp;scene=21#wechat_redirect">在 ML2 中配置 Vlan Network</a></p><p>094 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587586&amp;idx=1&amp;sn=a1ff8cb71db1f0a30cdaad5064ac85c9&amp;chksm=8d30809bba47098d817148b72bc24c11aae7ed89091c3407e7f54b9d5b61ee1fcdc48ce75a80&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587586&amp;idx=1&amp;sn=a1ff8cb71db1f0a30cdaad5064ac85c9&amp;chksm=8d30809bba47098d817148b72bc24c11aae7ed89091c3407e7f54b9d5b61ee1fcdc48ce75a80&amp;scene=21#wechat_redirect">创建第一个 vlan network "vlan100"</a></p><p>095 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587582&amp;idx=1&amp;sn=6a77496d39cbbe8915b9fc0e38c504be&amp;chksm=8d308067ba470971d85e02e513f703dec40b957fc7a069d1361f64da1d33f14a49e25e0cd5c9&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587582&amp;idx=1&amp;sn=6a77496d39cbbe8915b9fc0e38c504be&amp;chksm=8d308067ba470971d85e02e513f703dec40b957fc7a069d1361f64da1d33f14a49e25e0cd5c9&amp;scene=21#wechat_redirect">将 instance 连接到 vlan100</a></p><p>096 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587578&amp;idx=1&amp;sn=6721332ab7a4dfe351ad7e0e1add72b9&amp;chksm=8d308063ba470975a3017252c468c5a349cbc45e71d37600154d17bd596e814bc4abd9773e44&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587578&amp;idx=1&amp;sn=6721332ab7a4dfe351ad7e0e1add72b9&amp;chksm=8d308063ba470975a3017252c468c5a349cbc45e71d37600154d17bd596e814bc4abd9773e44&amp;scene=21#wechat_redirect">创建第二个 vlan network "vlan101"</a></p><p>097 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587577&amp;idx=1&amp;sn=b90e048c6161db19266d1d3d0791d6c5&amp;chksm=8d308060ba47097626aa4c69c6001cc983ca82d401661d762ab32ef40632b3b40a8edc761183&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587577&amp;idx=1&amp;sn=b90e048c6161db19266d1d3d0791d6c5&amp;chksm=8d308060ba47097626aa4c69c6001cc983ca82d401661d762ab32ef40632b3b40a8edc761183&amp;scene=21#wechat_redirect">将 instance 连接到 vlan101</a></p><p>098 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587574&amp;idx=1&amp;sn=5471a874e5b5a213856ceec673504031&amp;chksm=8d30806fba47097905040ac439077e43e57021a868e9cef1276219841976a81e2782869661ad&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587574&amp;idx=1&amp;sn=5471a874e5b5a213856ceec673504031&amp;chksm=8d30806fba47097905040ac439077e43e57021a868e9cef1276219841976a81e2782869661ad&amp;scene=21#wechat_redirect">Routing 功能概述</a></p><p>099 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587570&amp;idx=1&amp;sn=7f4341819b1341e4a98cd99e1848a340&amp;chksm=8d30806bba47097d69cdf8de057fe7780ca7070a8efcd1e47572785733628b2f079716c876a5&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587570&amp;idx=1&amp;sn=7f4341819b1341e4a98cd99e1848a340&amp;chksm=8d30806bba47097d69cdf8de057fe7780ca7070a8efcd1e47572785733628b2f079716c876a5&amp;scene=21#wechat_redirect">配置 L3 agent</a></p><p>100 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587565&amp;idx=1&amp;sn=bb68d3487f78e34aad2642264b29176a&amp;chksm=8d308074ba4709629c4a08aa6c6e46b3719d89745b634eed3f9d53f8ab698e0e75edbef74557&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587565&amp;idx=1&amp;sn=bb68d3487f78e34aad2642264b29176a&amp;chksm=8d308074ba4709629c4a08aa6c6e46b3719d89745b634eed3f9d53f8ab698e0e75edbef74557&amp;scene=21#wechat_redirect">创建 router 连通 subnet</a></p><p>101 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587562&amp;idx=1&amp;sn=74d5123363eaaadd1f5072cc876ec1ae&amp;chksm=8d308073ba470965a2dd1e9a18be97d25f9ebb6ffd70cfd6d5274fcdedd398dd530842d86bd7&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587562&amp;idx=1&amp;sn=74d5123363eaaadd1f5072cc876ec1ae&amp;chksm=8d308073ba470965a2dd1e9a18be97d25f9ebb6ffd70cfd6d5274fcdedd398dd530842d86bd7&amp;scene=21#wechat_redirect">虚拟 router 原理分析</a></p><p>102 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587558&amp;idx=1&amp;sn=e4381acfef2030b74f870e4f7c3547c6&amp;chksm=8d30807fba4709693926bc849dd4736b47e92e23c3b9d1af215466f524d21c7ec8865a859999&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587558&amp;idx=1&amp;sn=e4381acfef2030b74f870e4f7c3547c6&amp;chksm=8d30807fba4709693926bc849dd4736b47e92e23c3b9d1af215466f524d21c7ec8865a859999&amp;scene=21#wechat_redirect">Why Namespace?</a></p><p>103 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587553&amp;idx=1&amp;sn=dd4b5ff80e94ba7eb978730f141c8e8e&amp;chksm=8d308078ba47096ebb7b76f882d194c86d576d23fabe1a4b054e22d466104efafe6f64b0f0c6&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587553&amp;idx=1&amp;sn=dd4b5ff80e94ba7eb978730f141c8e8e&amp;chksm=8d308078ba47096ebb7b76f882d194c86d576d23fabe1a4b054e22d466104efafe6f64b0f0c6&amp;scene=21#wechat_redirect">访问外网 ML2 的配置</a></p><p>104 - <a data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587552&amp;idx=1&amp;sn=f6eff207c135c1d25352e0da88bba175&amp;chksm=8d308079ba47096f20fdda00a19c54764fe1b1f97238bae469771ad0ae06bd0f12348f13ef5c&amp;scene=21#wechat_redirect" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587552&amp;idx=1&amp;sn=f6eff207c135c1d25352e0da88bba175&amp;chksm=8d308079ba47096f20fdda00a19c54764fe1b1f97238bae469771ad0ae06bd0f12348f13ef5c&amp;scene=21#wechat_redirect">创建外网 ext_net</a></p><p>105 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587547&amp;idx=1&amp;sn=437882d6c5c24929d0455e41c0b4a226&amp;chksm=8d308042ba470954a45fb20f9cfc3245a94e91a0816238dd54097838eabbbaa148cfc162d436&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587547&amp;idx=1&amp;sn=437882d6c5c24929d0455e41c0b4a226&amp;chksm=8d308042ba470954a45fb20f9cfc3245a94e91a0816238dd54097838eabbbaa148cfc162d436&amp;scene=21#wechat_redirect">外网访问原理分析</a></p><p>106 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587542&amp;idx=1&amp;sn=4d209648987ab21349d8ca93af1e370e&amp;chksm=8d30804fba4709599201f35102648fbaaa3165a220fa5a9bccb97d3c633162f9074f7df472c5&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587542&amp;idx=1&amp;sn=4d209648987ab21349d8ca93af1e370e&amp;chksm=8d30804fba4709599201f35102648fbaaa3165a220fa5a9bccb97d3c633162f9074f7df472c5&amp;scene=21#wechat_redirect">创建 floating IP</a></p><p>107 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587539&amp;idx=1&amp;sn=b41b18336c593b143e7495660fa2f086&amp;chksm=8d30804aba47095c5ab109d963c7cc88a024c6aed8a75105e32db3e3d5cea846a878b6f12a31&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587539&amp;idx=1&amp;sn=b41b18336c593b143e7495660fa2f086&amp;chksm=8d30804aba47095c5ab109d963c7cc88a024c6aed8a75105e32db3e3d5cea846a878b6f12a31&amp;scene=21#wechat_redirect">floating IP 原理分析</a>&nbsp;</p><p>108 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587538&amp;idx=1&amp;sn=1df1616b4ff2f0bcd758b66f0092f05e&amp;chksm=8d30804bba47095df3beef5a445cb516021463cdf73afecd4721ebd70f68a15df1bc2ed38ba9&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587538&amp;idx=1&amp;sn=1df1616b4ff2f0bcd758b66f0092f05e&amp;chksm=8d30804bba47095df3beef5a445cb516021463cdf73afecd4721ebd70f68a15df1bc2ed38ba9&amp;scene=21#wechat_redirect">VXLAN 概念（Part I）</a></p><p><span style="white-space: pre-wrap;">109 - </span><a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587534&amp;idx=1&amp;sn=432430ea6797d72abf02594b3ddcc7ab&amp;chksm=8d308057ba4709419a7ce406d08451ed1abd11341c2624cd61b83d31cdda51e0df35603b3a45&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587534&amp;idx=1&amp;sn=432430ea6797d72abf02594b3ddcc7ab&amp;chksm=8d308057ba4709419a7ce406d08451ed1abd11341c2624cd61b83d31cdda51e0df35603b3a45&amp;scene=21#wechat_redirect">VXLAN 概念（Part II）</a></p><p>110 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587528&amp;idx=1&amp;sn=f23703b621fa207deae04a72b4a8fca8&amp;chksm=8d308051ba470947ec0091a4db128d2e201098d708c0a0dc69d267277e20e1d80b29bb70886a&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587528&amp;idx=1&amp;sn=f23703b621fa207deae04a72b4a8fca8&amp;chksm=8d308051ba470947ec0091a4db128d2e201098d708c0a0dc69d267277e20e1d80b29bb70886a&amp;scene=21#wechat_redirect">在 ML2 中配置 VXLAN</a></p><p>111 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587527&amp;idx=1&amp;sn=5ce88aaf61a01a72388619c831f66a85&amp;chksm=8d30805eba4709487a3554f6016498a4e249ade2bb3260c6b7b288cebf13e866080f43f0c3be&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587527&amp;idx=1&amp;sn=5ce88aaf61a01a72388619c831f66a85&amp;chksm=8d30805eba4709487a3554f6016498a4e249ade2bb3260c6b7b288cebf13e866080f43f0c3be&amp;scene=21#wechat_redirect">创建 VXLAN</a></p><p>112 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587524&amp;idx=1&amp;sn=9e840234f1a24578e0d27c2aebdbc9ce&amp;chksm=8d30805dba47094b86d86da5fbaee26438184f4ec7ce9c8e603f20abdd2502e651e7964a413e&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587524&amp;idx=1&amp;sn=9e840234f1a24578e0d27c2aebdbc9ce&amp;chksm=8d30805dba47094b86d86da5fbaee26438184f4ec7ce9c8e603f20abdd2502e651e7964a413e&amp;scene=21#wechat_redirect">部署 instance 到 VXLAN</a></p><p>113 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587520&amp;idx=1&amp;sn=a76ef8e7540a7e95df9cfeb8c9d9d896&amp;chksm=8d308059ba47094fd4f8d7be4caba7d3f1f6262ad4c0c374ddcb538559e5e0dfcc35c8a6f601&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587520&amp;idx=1&amp;sn=a76ef8e7540a7e95df9cfeb8c9d9d896&amp;chksm=8d308059ba47094fd4f8d7be4caba7d3f1f6262ad4c0c374ddcb538559e5e0dfcc35c8a6f601&amp;scene=21#wechat_redirect">L2 Population 原理</a></p><p>114 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587517&amp;idx=1&amp;sn=cd4d8f849c3ba7a17f37d596aa3976f0&amp;chksm=8d308024ba470932069323b5685b7f2e452904f451a50a225111135135eb9591a0b60fc4d6d4&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587517&amp;idx=1&amp;sn=cd4d8f849c3ba7a17f37d596aa3976f0&amp;chksm=8d308024ba470932069323b5685b7f2e452904f451a50a225111135135eb9591a0b60fc4d6d4&amp;scene=21#wechat_redirect">配置 L2 Population</a></p><p>115 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587516&amp;idx=1&amp;sn=e1d76ee4186384ffe297c2273888af1d&amp;chksm=8d308025ba4709333b380944fb540c165e2ffe86b0a9d6b19dfd42e4c2d098817f1cc8eab31c&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587516&amp;idx=1&amp;sn=e1d76ee4186384ffe297c2273888af1d&amp;chksm=8d308025ba4709333b380944fb540c165e2ffe86b0a9d6b19dfd42e4c2d098817f1cc8eab31c&amp;scene=21#wechat_redirect">Neutron 默认安全组规则</a></p><p>116 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587513&amp;idx=1&amp;sn=f0c30639e4d7a3ca34505fa69ecafa3c&amp;chksm=8d308020ba47093689b38151f04f4af5f749d21468932e021b369b9814a7258f67ab8f8be883&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587513&amp;idx=1&amp;sn=f0c30639e4d7a3ca34505fa69ecafa3c&amp;chksm=8d308020ba47093689b38151f04f4af5f749d21468932e021b369b9814a7258f67ab8f8be883&amp;scene=21#wechat_redirect">应用新安全组</a></p><p>117 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587510&amp;idx=1&amp;sn=7f7d30d3f1bc041ee34bec2492b7c33c&amp;chksm=8d30802fba470939b0134f12aa57db5575938a31265783704565ee2a1357da1dcc5506557b14&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587510&amp;idx=1&amp;sn=7f7d30d3f1bc041ee34bec2492b7c33c&amp;chksm=8d30802fba470939b0134f12aa57db5575938a31265783704565ee2a1357da1dcc5506557b14&amp;scene=21#wechat_redirect">理解 Neutron FWaaS</a></p><p>118 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587507&amp;idx=1&amp;sn=b17dd652d7091dbf6a36fbfe86ec954d&amp;chksm=8d30802aba47093c90d03e2f2510b5fd5f68563cf503dbbe3d3ca0a56af9aa7ec2eeda3b0020&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587507&amp;idx=1&amp;sn=b17dd652d7091dbf6a36fbfe86ec954d&amp;chksm=8d30802aba47093c90d03e2f2510b5fd5f68563cf503dbbe3d3ca0a56af9aa7ec2eeda3b0020&amp;scene=21#wechat_redirect">实践 Neutron FWaaS</a></p><p>119 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587503&amp;idx=1&amp;sn=0f6150a096534f9c9c0cefca9d3fde89&amp;chksm=8d308036ba47092009bba33126387e690b84440a9b4f020377d37a49035fd70232b971162cfd&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587503&amp;idx=1&amp;sn=0f6150a096534f9c9c0cefca9d3fde89&amp;chksm=8d308036ba47092009bba33126387e690b84440a9b4f020377d37a49035fd70232b971162cfd&amp;scene=21#wechat_redirect">FWaaS 实践: 允许 ssh</a></p><p>120 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587499&amp;idx=1&amp;sn=180a713d65cf85d9196c3f5253dec62f&amp;chksm=8d308032ba47092450cf960f9bb0cd386f91fd1f084a44f91a04d88b85133533daba983f582b&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587499&amp;idx=1&amp;sn=180a713d65cf85d9196c3f5253dec62f&amp;chksm=8d308032ba47092450cf960f9bb0cd386f91fd1f084a44f91a04d88b85133533daba983f582b&amp;scene=21#wechat_redirect">理解 Neutorn LBaaS</a></p><p>121 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587495&amp;idx=1&amp;sn=38160c95d3fab28005cb5b7201f7d722&amp;chksm=8d30803eba470928f3b30168e6e3658bc918068553195dd35a421800e3d0c06f8f43373dbc86&amp;scene=21#wechat_redirect" target="_blank">配置 LBaaS</a></p><p>122 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587494&amp;idx=1&amp;sn=82dca30fdbbc82cbbf6871a4cad16c1c&amp;chksm=8d30803fba470929f7358a469094e91a5662a31f45356cc31be540074805bd055157a175d64b&amp;scene=21#wechat_redirect" target="_blank">创建 Pool &amp; VIP</a></p><p>123 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587490&amp;idx=1&amp;sn=2b721d40934220f950dc9691d5fb73b4&amp;chksm=8d30803bba47092d152a18b7ce60e7de9d7f4b7529be67af338847a5c13e3cfff48e7f5faadc&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587490&amp;idx=1&amp;sn=2b721d40934220f950dc9691d5fb73b4&amp;chksm=8d30803bba47092d152a18b7ce60e7de9d7f4b7529be67af338847a5c13e3cfff48e7f5faadc&amp;scene=21#wechat_redirect">添加 Pool Member</a></p><p>124 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587487&amp;idx=1&amp;sn=dd08bd7c05689b0c853af26c0bb22998&amp;chksm=8d308006ba4709109f139c9b2ae7d3b161a67a2ee49546e4ca4160cfe8e055711bddf62a536e&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587487&amp;idx=1&amp;sn=dd08bd7c05689b0c853af26c0bb22998&amp;chksm=8d308006ba4709109f139c9b2ae7d3b161a67a2ee49546e4ca4160cfe8e055711bddf62a536e&amp;scene=21#wechat_redirect">创建 Monitor 并测试</a></p><p>125 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587483&amp;idx=1&amp;sn=fbb6a35c01f6db828d4b405438d9fe7e&amp;chksm=8d308002ba470914aa972d637543d0d08d70ad380c2cb619ab0f455ddd747cfaa94437860471&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587483&amp;idx=1&amp;sn=fbb6a35c01f6db828d4b405438d9fe7e&amp;chksm=8d308002ba470914aa972d637543d0d08d70ad380c2cb619ab0f455ddd747cfaa94437860471&amp;scene=21#wechat_redirect">LBaaS 实现机制</a></p><p>126 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587481&amp;idx=1&amp;sn=518ba2f42b1f57afb4f3e01c346c3f4f&amp;chksm=8d308000ba470916381f6a61bcee8f702f26dffca6d33d9f242f69b58c730f47b8e6ef4b59b1&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587481&amp;idx=1&amp;sn=518ba2f42b1f57afb4f3e01c346c3f4f&amp;chksm=8d308000ba470916381f6a61bcee8f702f26dffca6d33d9f242f69b58c730f47b8e6ef4b59b1&amp;scene=21#wechat_redirect">通过 floating IP 访问 VIP</a></p><p>127 - <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587478&amp;idx=1&amp;sn=46ab66e055b542780e09fff83b1e9431&amp;chksm=8d30800fba4709191b8d686375df191cc59776b0ed516bf15c8ab13fccb9e99094203428e1f5&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587478&amp;idx=1&amp;sn=46ab66e055b542780e09fff83b1e9431&amp;chksm=8d30800fba4709191b8d686375df191cc59776b0ed516bf15c8ab13fccb9e99094203428e1f5&amp;scene=21#wechat_redirect">启用 Open vSwitch</a></p><p>128 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587472&amp;idx=1&amp;sn=fd2522441a678b25387da1f965b897d7&amp;chksm=8d308009ba47091f8dd101b84d41567b00292fea43edda1a03dac67e2680e225b766e83b1b88&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587472&amp;idx=1&amp;sn=fd2522441a678b25387da1f965b897d7&amp;chksm=8d308009ba47091f8dd101b84d41567b00292fea43edda1a03dac67e2680e225b766e83b1b88&amp;scene=21#wechat_redirect">OVS 中的各种网络设备</a></p><p>129 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587469&amp;idx=1&amp;sn=0efe77289bd315522bdcc1618db635b2&amp;chksm=8d308014ba47090278b9f132432c11155e1b817f1105bb196bb12aef04abb5f4f2ee309be043&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587469&amp;idx=1&amp;sn=0efe77289bd315522bdcc1618db635b2&amp;chksm=8d308014ba47090278b9f132432c11155e1b817f1105bb196bb12aef04abb5f4f2ee309be043&amp;scene=21#wechat_redirect">创建 OVS Local Network</a></p><p>130 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587458&amp;idx=1&amp;sn=df59107c4820d575ea02b049513c56a3&amp;chksm=8d30801bba47090d62d0cac15bbd0cdc149e8c10a694ce199215cdad498194e00b7b40cb8b01&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587458&amp;idx=1&amp;sn=df59107c4820d575ea02b049513c56a3&amp;chksm=8d30801bba47090d62d0cac15bbd0cdc149e8c10a694ce199215cdad498194e00b7b40cb8b01&amp;scene=21#wechat_redirect">将 instance 部署到 OVS Local Network</a></p><p>131 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587452&amp;idx=1&amp;sn=63ddb86a1b2f04b9265561edcab2215a&amp;chksm=8d308fe5ba4706f3876d6dca8471bf985c79307ec92e56bcd9090176832e1053e36ee03417e3&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587452&amp;idx=1&amp;sn=63ddb86a1b2f04b9265561edcab2215a&amp;chksm=8d308fe5ba4706f3876d6dca8471bf985c79307ec92e56bcd9090176832e1053e36ee03417e3&amp;scene=21#wechat_redirect">部署 cirros_vm2 和 second_local_net</a></p><p>132 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587445&amp;idx=1&amp;sn=4b0d8bd351e1473b14a527ba0cd16b56&amp;chksm=8d308fecba4706fa3075812748e7ffb56b5f993c22c30bd9e9ec1be0d82639638792aa5ef0fc&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587445&amp;idx=1&amp;sn=4b0d8bd351e1473b14a527ba0cd16b56&amp;chksm=8d308fecba4706fa3075812748e7ffb56b5f993c22c30bd9e9ec1be0d82639638792aa5ef0fc&amp;scene=21#wechat_redirect">OVS local network 连通性分析</a></p><p>133 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587441&amp;idx=1&amp;sn=07c374282798e5736fdd34a8b07f871e&amp;chksm=8d308fe8ba4706fe448452964a8dcfe3b2613a85e5a519a8be2625df5e98a3e3075bc06e8191&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587441&amp;idx=1&amp;sn=07c374282798e5736fdd34a8b07f871e&amp;chksm=8d308fe8ba4706fe448452964a8dcfe3b2613a85e5a519a8be2625df5e98a3e3075bc06e8191&amp;scene=21#wechat_redirect">在 ML2 中配置 OVS flat network</a></p><p>134 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587436&amp;idx=1&amp;sn=8e21f80ef6f980e4a0b3a525fe4f2f43&amp;chksm=8d308ff5ba4706e356ea6ed28abe274170ebd50d6270e4e02934849156b418bcba31d923b2c0&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587436&amp;idx=1&amp;sn=8e21f80ef6f980e4a0b3a525fe4f2f43&amp;chksm=8d308ff5ba4706e356ea6ed28abe274170ebd50d6270e4e02934849156b418bcba31d923b2c0&amp;scene=21#wechat_redirect">创建 OVS flat network</a></p><p>135 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587433&amp;idx=1&amp;sn=783d9b6dc86dd25f6cdc39e74cdd463b&amp;chksm=8d308ff0ba4706e69819902df1bc2f38e738cc886c19330fd9311e5b572d9f72c1ab284fed9a&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587433&amp;idx=1&amp;sn=783d9b6dc86dd25f6cdc39e74cdd463b&amp;chksm=8d308ff0ba4706e69819902df1bc2f38e738cc886c19330fd9311e5b572d9f72c1ab284fed9a&amp;scene=21#wechat_redirect">部署 instance 到 OVS flat network</a></p><p>136 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587430&amp;idx=1&amp;sn=954fb4c3f47b5c47bc6bd0ca1a78d844&amp;chksm=8d308fffba4706e955a23eec259e7a04ce68f8722bffa63d1825be20a91cff7e3e4daae7451b&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587430&amp;idx=1&amp;sn=954fb4c3f47b5c47bc6bd0ca1a78d844&amp;chksm=8d308fffba4706e955a23eec259e7a04ce68f8722bffa63d1825be20a91cff7e3e4daae7451b&amp;scene=21#wechat_redirect">在 ML2 中配置 OVS vlan network</a></p><p>137 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587425&amp;idx=1&amp;sn=7296aac3972e9ea08442a52dca6bb56b&amp;chksm=8d308ff8ba4706eee983b3473a5f51f3ace27d11c3c2928a46b030e890f4c7c26f0830c1b099&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587425&amp;idx=1&amp;sn=7296aac3972e9ea08442a52dca6bb56b&amp;chksm=8d308ff8ba4706eee983b3473a5f51f3ace27d11c3c2928a46b030e890f4c7c26f0830c1b099&amp;scene=21#wechat_redirect">创建 OVS vlan100 netwrok</a></p><p>138 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587415&amp;idx=1&amp;sn=d3005225a4b0609f6bf183e49c0a6cd7&amp;chksm=8d308fceba4706d83401795aa257badf8f115762355ccd382cd5b0c0e6c8934efa126746def9&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587415&amp;idx=1&amp;sn=d3005225a4b0609f6bf183e49c0a6cd7&amp;chksm=8d308fceba4706d83401795aa257badf8f115762355ccd382cd5b0c0e6c8934efa126746def9&amp;scene=21#wechat_redirect">部署 instance 到 OVS vlan100<br  /></a>139 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587406&amp;idx=1&amp;sn=2bb8bb839ff304502417a5a96db512af&amp;chksm=8d308fd7ba4706c1e8e563a1d285010e7a9222f0621a78f1e06c06db54c2eebcf106afb47024&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587406&amp;idx=1&amp;sn=2bb8bb839ff304502417a5a96db512af&amp;chksm=8d308fd7ba4706c1e8e563a1d285010e7a9222f0621a78f1e06c06db54c2eebcf106afb47024&amp;scene=21#wechat_redirect">创建 OVS vlan101 并部署 instance</a></p><p>140 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587413&amp;idx=1&amp;sn=6d37c19f126980a25782aae6d0e75029&amp;chksm=8d308fccba4706da8307f984beab0fb41d3dfdcfe8661bebd2a7764b4c05b2a35e8f032e0216&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587413&amp;idx=1&amp;sn=6d37c19f126980a25782aae6d0e75029&amp;chksm=8d308fccba4706da8307f984beab0fb41d3dfdcfe8661bebd2a7764b4c05b2a35e8f032e0216&amp;scene=21#wechat_redirect">分析 OVS 如何实现 vlan 隔离</a></p><p>141 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587417&amp;idx=1&amp;sn=fb9f549de4b0cc4923187b06b8cfbc3f&amp;chksm=8d308fc0ba4706d60d81ef74e2ef8a09879544af0bcb9ceb24871a1e3affe446bd4c026f523e&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587417&amp;idx=1&amp;sn=fb9f549de4b0cc4923187b06b8cfbc3f&amp;chksm=8d308fc0ba4706d60d81ef74e2ef8a09879544af0bcb9ceb24871a1e3affe446bd4c026f523e&amp;scene=21#wechat_redirect">用虚拟 router 连通 subnet</a></p><p>142 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587424&amp;idx=1&amp;sn=f7654df4df8652a07f044531abe3b44c&amp;chksm=8d308ff9ba4706efac361c6ced0923b611333a52df92520f5be4c5386d67da08a6f54b4b613c&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587424&amp;idx=1&amp;sn=f7654df4df8652a07f044531abe3b44c&amp;chksm=8d308ff9ba4706efac361c6ced0923b611333a52df92520f5be4c5386d67da08a6f54b4b613c&amp;scene=21#wechat_redirect">Neutron Router 工作原理</a></p><p>143 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587427&amp;idx=1&amp;sn=6719232c78d0763c88aedf9b57fdbc46&amp;chksm=8d308ffaba4706ecf4e63f553b66eb269b3e617f2d3e6cac07c05951aec75b3be38211245410&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587427&amp;idx=1&amp;sn=6719232c78d0763c88aedf9b57fdbc46&amp;chksm=8d308ffaba4706ecf4e63f553b66eb269b3e617f2d3e6cac07c05951aec75b3be38211245410&amp;scene=21#wechat_redirect">访问 Neutron 外部网络</a></p><p>144 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587429&amp;idx=1&amp;sn=820d3ea92d3bef94fd98679904ae14d7&amp;chksm=8d308ffcba4706ea268a5fb36b42e9f40cbc884dcc9f7a4b1316c1cfd6065954cb600d3afa26&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587429&amp;idx=1&amp;sn=820d3ea92d3bef94fd98679904ae14d7&amp;chksm=8d308ffcba4706ea268a5fb36b42e9f40cbc884dcc9f7a4b1316c1cfd6065954cb600d3afa26&amp;scene=21#wechat_redirect">创建 OVS 外部网络 ext_net</a></p><p>145 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587432&amp;idx=1&amp;sn=cd9b8bcad85e7caecec1f53d6b283ca6&amp;chksm=8d308ff1ba4706e7e444ac29d3c570b336cb11ab626430188658500efb90e5d5ba94f6690e1a&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587432&amp;idx=1&amp;sn=cd9b8bcad85e7caecec1f53d6b283ca6&amp;chksm=8d308ff1ba4706e7e444ac29d3c570b336cb11ab626430188658500efb90e5d5ba94f6690e1a&amp;scene=21#wechat_redirect">将 ext_net 连接到 router</a></p><p>146 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587435&amp;idx=1&amp;sn=5462934757167270761c825b515df0e7&amp;chksm=8d308ff2ba4706e43ce353850bd7dba60a5f8aab2df64e3424439a7aa124c72c26bb4d2d94a1&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587435&amp;idx=1&amp;sn=5462934757167270761c825b515df0e7&amp;chksm=8d308ff2ba4706e43ce353850bd7dba60a5f8aab2df64e3424439a7aa124c72c26bb4d2d94a1&amp;scene=21#wechat_redirect">ML2 中配置 OVS VxLAN</a></p><p>147 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587438&amp;idx=1&amp;sn=6c380c0cbd98f9c4faa64b2e5d2298e6&amp;chksm=8d308ff7ba4706e1e9a48748fcb98f5d71a235c71cc000d19b4aa12ae49f41315ace9ab89b4a&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587438&amp;idx=1&amp;sn=6c380c0cbd98f9c4faa64b2e5d2298e6&amp;chksm=8d308ff7ba4706e1e9a48748fcb98f5d71a235c71cc000d19b4aa12ae49f41315ace9ab89b4a&amp;scene=21#wechat_redirect">创建 vxlan 并部署 instance</a></p><p>148 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587440&amp;idx=1&amp;sn=3757ad4e2369589b299de1b7a52bc878&amp;chksm=8d308fe9ba4706ff1e16460c7615a8b368c25c760a5eb24990d0e61fe1c075465c9c137eaa4a&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587440&amp;idx=1&amp;sn=3757ad4e2369589b299de1b7a52bc878&amp;chksm=8d308fe9ba4706ff1e16460c7615a8b368c25c760a5eb24990d0e61fe1c075465c9c137eaa4a&amp;scene=21#wechat_redirect">OVS vxlan 底层结构分析</a></p><p>149 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587444&amp;idx=1&amp;sn=eaeac991ef097742cc6455430532a5ea&amp;chksm=8d308fedba4706fbd4a1ff91eeea4e04a0a3a559bd7f71fb2da1a73b70103ff0ac648191817c&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587444&amp;idx=1&amp;sn=eaeac991ef097742cc6455430532a5ea&amp;chksm=8d308fedba4706fbd4a1ff91eeea4e04a0a3a559bd7f71fb2da1a73b70103ff0ac648191817c&amp;scene=21#wechat_redirect">OVS VxLAN Flow 分析</a></p><p><br  /></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDown(&#39;shifu_t_002&#39;)" style="margin: 1em auto;padding-top: 0.5em;padding-bottom: 0.5em;white-space: normal;line-height: 25.6px;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 556px;"><span class="color" style="width: 556px;border-top: 1px solid rgb(0, 88, 156);border-color: rgb(0, 88, 156);display: inline-block;"><section class="color2" style="padding: 5px 10px;min-height: 32px;color: rgb(255, 255, 255);display: inline-block;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;font-size: 20px;background-color: rgb(0, 88, 156);"><p><strong>经验分享</strong></p></section></span></section><p>150 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587447&amp;idx=1&amp;sn=24b3bebc819fd79be99851ee20007176&amp;chksm=8d308feeba4706f832037ca5db436782c84bbdfb8a07e71925326351926463342851a18c71e7&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587447&amp;idx=1&amp;sn=24b3bebc819fd79be99851ee20007176&amp;chksm=8d308feeba4706f832037ca5db436782c84bbdfb8a07e71925326351926463342851a18c71e7&amp;scene=21#wechat_redirect">学习 OpenStack 的方法论</a>&nbsp;</p><p>151 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587449&amp;idx=1&amp;sn=2836e265517ef5b4dd657bc2b95ddf65&amp;chksm=8d308fe0ba4706f6bf71ea950ea280e5b00c12d3d72d8d49c758ac736df06e787cca57192e72&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587449&amp;idx=1&amp;sn=2836e265517ef5b4dd657bc2b95ddf65&amp;chksm=8d308fe0ba4706f6bf71ea950ea280e5b00c12d3d72d8d49c758ac736df06e787cca57192e72&amp;scene=21#wechat_redirect">制作 OpenStack Linux 镜像</a></p><p>152 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587451&amp;idx=1&amp;sn=cf52a76b5eefbe3fe6d7d51673f72cfd&amp;chksm=8d308fe2ba4706f4ef319b334bbd6d3a191855a4a9152076464fe2b7639ab8e05acb3992c100&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587451&amp;idx=1&amp;sn=cf52a76b5eefbe3fe6d7d51673f72cfd&amp;chksm=8d308fe2ba4706f4ef319b334bbd6d3a191855a4a9152076464fe2b7639ab8e05acb3992c100&amp;scene=21#wechat_redirect">制作 OpenStack Windows 镜像</a></p><p>153 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587456&amp;idx=1&amp;sn=fae3840220e364177d7022b737680068&amp;chksm=8d308019ba47090f12bb163e08214e66a64649d7ad6abee42de72a9744ff912c8fa7a937e40c&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587456&amp;idx=1&amp;sn=fae3840220e364177d7022b737680068&amp;chksm=8d308019ba47090f12bb163e08214e66a64649d7ad6abee42de72a9744ff912c8fa7a937e40c&amp;scene=21#wechat_redirect">解决 Windows instance 时间不同步问题</a></p><p>154 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587460&amp;idx=1&amp;sn=d578b2c5fe39febc804d104891f8e9b4&amp;chksm=8d30801dba47090b961a7a7507d8e69be9d40a2ec07e462fe9d31de06468a18b593d7204b40b&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587460&amp;idx=1&amp;sn=d578b2c5fe39febc804d104891f8e9b4&amp;chksm=8d30801dba47090b961a7a7507d8e69be9d40a2ec07e462fe9d31de06468a18b593d7204b40b&amp;scene=21#wechat_redirect">cloudbase-init 自动扩盘的副作用</a></p><p>155 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587463&amp;idx=1&amp;sn=8549a5d5daea04c799e9fbe6c4a54cee&amp;chksm=8d30801eba47090879f4801ccb6fea6a23ea0fcc82ac6270a5a9234d8d4e24f329e8f13f82df&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587463&amp;idx=1&amp;sn=8549a5d5daea04c799e9fbe6c4a54cee&amp;chksm=8d30801eba47090879f4801ccb6fea6a23ea0fcc82ac6270a5a9234d8d4e24f329e8f13f82df&amp;scene=21#wechat_redirect">定制 Linux cloud-init</a></p><p><span style="line-height: 25.6px;">156 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587471&amp;idx=1&amp;sn=8cb3747f3c677b410ae61e753d631c6a&amp;chksm=8d308016ba470900da4c3d18698c6857533406dfb281c3409f52d793e3e0f911f504daed28e3&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587471&amp;idx=1&amp;sn=8cb3747f3c677b410ae61e753d631c6a&amp;chksm=8d308016ba470900da4c3d18698c6857533406dfb281c3409f52d793e3e0f911f504daed28e3&amp;scene=21#wechat_redirect">动态添加删除网卡</a></span></p><p><span style="line-height: 25.6px;">157 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587477&amp;idx=1&amp;sn=4a960978a3667d69998b4dbce862e75d&amp;chksm=8d30800cba47091a371f8a9b69451c5897c2451a7539bf9b8f469fbabf924f92e7085be6212d&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587477&amp;idx=1&amp;sn=4a960978a3667d69998b4dbce862e75d&amp;chksm=8d30800cba47091a371f8a9b69451c5897c2451a7539bf9b8f469fbabf924f92e7085be6212d&amp;scene=21#wechat_redirect">为 instance 配置静态 IP</a></span></p><p><span style="line-height: 25.6px;">158 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587480&amp;idx=1&amp;sn=d02be878adcbca6bba898c367ac9e46e&amp;chksm=8d308001ba470917b3b3c7564dba540d6d0799ebcdf4851323c2e71815cec1c78964b7110134&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587480&amp;idx=1&amp;sn=d02be878adcbca6bba898c367ac9e46e&amp;chksm=8d308001ba470917b3b3c7564dba540d6d0799ebcdf4851323c2e71815cec1c78964b7110134&amp;scene=21#wechat_redirect">最简单的 RabbitMQ 监控方法</a></span></p><p><span style="line-height: 25.6px;">159 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587485&amp;idx=1&amp;sn=9daa183a5e54f707b1bc7bc7dd5b2602&amp;chksm=8d308004ba470912a601329815105603b6b57e190d04209c8deaa7614a1534f5e48fd9b737bb&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587485&amp;idx=1&amp;sn=9daa183a5e54f707b1bc7bc7dd5b2602&amp;chksm=8d308004ba470912a601329815105603b6b57e190d04209c8deaa7614a1534f5e48fd9b737bb&amp;scene=21#wechat_redirect">instance “error” 了怎么办？</a></span></p><p><span style="line-height: 25.6px;">160 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587489&amp;idx=1&amp;sn=dbb492f2f8b65fd3d199223d3d02d621&amp;chksm=8d308038ba47092e33fcc8328e147de363ee1490c0e486b5ac58bfafeb8d98be4d831e6157ae&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587489&amp;idx=1&amp;sn=dbb492f2f8b65fd3d199223d3d02d621&amp;chksm=8d308038ba47092e33fcc8328e147de363ee1490c0e486b5ac58bfafeb8d98be4d831e6157ae&amp;scene=21#wechat_redirect">Troubleshooting OpenStack 瘫痪</a></span></p><p><span style="line-height: 25.6px;">161 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587493&amp;idx=1&amp;sn=09f25b9e6d01dcb2140e7cff24817582&amp;chksm=8d30803cba47092aa8f800fbb818cb0cd7553a2cea40067337fcf0a5897b79305afeb32d13f4&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587493&amp;idx=1&amp;sn=09f25b9e6d01dcb2140e7cff24817582&amp;chksm=8d30803cba47092aa8f800fbb818cb0cd7553a2cea40067337fcf0a5897b79305afeb32d13f4&amp;scene=21#wechat_redirect">如何更新 OpenStack 组件？</a></span></p><p><span style="line-height: 25.6px;">162 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587498&amp;idx=1&amp;sn=e6e02c283a9a6bc82deb456a3db49396&amp;chksm=8d308033ba470925936edc483fdb93c34687bc3bd6d01381a1807f899d384a2e3ebc1b2ce55b&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587498&amp;idx=1&amp;sn=e6e02c283a9a6bc82deb456a3db49396&amp;chksm=8d308033ba470925936edc483fdb93c34687bc3bd6d01381a1807f899d384a2e3ebc1b2ce55b&amp;scene=21#wechat_redirect">Troubleshooting OpenStack Bug</a></span></p><p><span style="line-height: 25.6px;">163 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587502&amp;idx=1&amp;sn=1bffecd61151fb065abc5f63570b42dc&amp;chksm=8d308037ba470921054704f9e23739106b622ee01ec7d51a3b657836cd2cc37095e7923eef01&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587502&amp;idx=1&amp;sn=1bffecd61151fb065abc5f63570b42dc&amp;chksm=8d308037ba470921054704f9e23739106b622ee01ec7d51a3b657836cd2cc37095e7923eef01&amp;scene=21#wechat_redirect">你真的会 snapshot 吗？</a></span></p><p><span style="line-height: 25.6px;"><br  /></span></p><p><span style="line-height: 25.6px;"></span></p><section label="Copyright © 2015 playhudong All Rights Reserved." donone="shifuMouseDown(&#39;shifu_t_002&#39;)" style="margin: 1em auto;padding-top: 0.5em;padding-bottom: 0.5em;white-space: normal;line-height: 25.6px;border-width: initial;border-style: none;border-color: initial;text-align: center;width: 556px;"><span class="color" style="width: 556px;border-top: 1px solid rgb(0, 88, 156);border-color: rgb(0, 88, 156);display: inline-block;"><section class="color2" style="padding: 5px 10px;min-height: 32px;color: rgb(255, 255, 255);display: inline-block;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;font-size: 20px;background-color: rgb(0, 88, 156);"><p><strong>Metadata Service</strong></p></section></span></section><p><span style="line-height: 25.6px;"></span>164 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587506&amp;idx=1&amp;sn=de693cfe2f7d08a2530f0bc05328fb1d&amp;chksm=8d30802bba47093d8272806983fec20946e12155f2271a7d7fa2cd910bb03e25dcebb0ee5670&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587506&amp;idx=1&amp;sn=de693cfe2f7d08a2530f0bc05328fb1d&amp;chksm=8d30802bba47093d8272806983fec20946e12155f2271a7d7fa2cd910bb03e25dcebb0ee5670&amp;scene=21#wechat_redirect" style="white-space: normal;">Metadata Service 最高频的应用</a></p><p><span style="line-height: 25.6px;">165 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587509&amp;idx=1&amp;sn=8d670081785c2487f120ae4401ed5064&amp;chksm=8d30802cba47093ad4dc7f13f951ed2bc1851004b08109f4deac012c0f3aae9a66fe71003d81&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587509&amp;idx=1&amp;sn=8d670081785c2487f120ae4401ed5064&amp;chksm=8d30802cba47093ad4dc7f13f951ed2bc1851004b08109f4deac012c0f3aae9a66fe71003d81&amp;scene=21#wechat_redirect">Metadata Service 架构详解</a></span></p><p><span style="line-height: 25.6px;">166 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587512&amp;idx=1&amp;sn=d7d7eab937f998bea0397997192d41aa&amp;chksm=8d308021ba4709371c1cf7ecbf9935b819fc7e014b784b09e1c323c4e16cdef24e7daef82ed3&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587512&amp;idx=1&amp;sn=d7d7eab937f998bea0397997192d41aa&amp;chksm=8d308021ba4709371c1cf7ecbf9935b819fc7e014b784b09e1c323c4e16cdef24e7daef82ed3&amp;scene=21#wechat_redirect">获取 Metadata 的完整例子</a></span></p><p><span style="line-height: 25.6px;">167 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587515&amp;idx=1&amp;sn=246204d8f3f546f7826c68107bb98384&amp;chksm=8d308022ba470934e98922e2bf959f37abada42b47dbb3a3f610e9d58e6d4e31b77db6cafce5&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587515&amp;idx=1&amp;sn=246204d8f3f546f7826c68107bb98384&amp;chksm=8d308022ba470934e98922e2bf959f37abada42b47dbb3a3f610e9d58e6d4e31b77db6cafce5&amp;scene=21#wechat_redirect">获取 metadata 过程详解</a></span></p><p><span style="line-height: 25.6px;">168 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587519&amp;idx=1&amp;sn=63d445185b9a3157a58a4582ea061f26&amp;chksm=8d308026ba4709300aca8b47da8682b9c2a9ed0dac15881d776ebbd7c3272e35923a67e80310&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587519&amp;idx=1&amp;sn=63d445185b9a3157a58a4582ea061f26&amp;chksm=8d308026ba4709300aca8b47da8682b9c2a9ed0dac15881d776ebbd7c3272e35923a67e80310&amp;scene=21#wechat_redirect">通过 dhcp-agent 访问 Metadata</a></span></p><p><span style="line-height: 25.6px;">169 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587523&amp;idx=1&amp;sn=d1883482cccd9406a4e1281ac2aaf62e&amp;chksm=8d30805aba47094cd7ace32029d8a69e6622640244920d1bac8c9f8870826009729cecb27481&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587523&amp;idx=1&amp;sn=d1883482cccd9406a4e1281ac2aaf62e&amp;chksm=8d30805aba47094cd7ace32029d8a69e6622640244920d1bac8c9f8870826009729cecb27481&amp;scene=21#wechat_redirect">instance 怎么获得自己的 Metadata</a></span></p><p><span style="line-height: 25.6px;">170 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587526&amp;idx=1&amp;sn=c9761d37db81f8be4dcb6ff957c89af5&amp;chksm=8d30805fba470949d00caca2a0e07e984d9b1632832d8b34e76ee8887bf0680e4e088564139e&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587526&amp;idx=1&amp;sn=c9761d37db81f8be4dcb6ff957c89af5&amp;chksm=8d30805fba470949d00caca2a0e07e984d9b1632832d8b34e76ee8887bf0680e4e088564139e&amp;scene=21#wechat_redirect">实践 config drive</a></span></p><p><span style="line-height: 25.6px;">171 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587530&amp;idx=1&amp;sn=008ea361371e347cabaf37c7fe90e159&amp;chksm=8d308053ba470945d1a68e8bae75260809f349d4e348470499ffd5dff453465dfac502106262&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587530&amp;idx=1&amp;sn=008ea361371e347cabaf37c7fe90e159&amp;chksm=8d308053ba470945d1a68e8bae75260809f349d4e348470499ffd5dff453465dfac502106262&amp;scene=21#wechat_redirect">cloud-init 工作原理</a></span></p><p><span style="line-height: 25.6px;">172 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587533&amp;idx=1&amp;sn=895e74ac055df7e846ddca2bacec3cc2&amp;chksm=8d308054ba4709428400714eb98086283ea61d2e0be6b93edda92f32aecd202c1607c09d565e&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587533&amp;idx=1&amp;sn=895e74ac055df7e846ddca2bacec3cc2&amp;chksm=8d308054ba4709428400714eb98086283ea61d2e0be6b93edda92f32aecd202c1607c09d565e&amp;scene=21#wechat_redirect">instance 网卡是如何被拉起来的？</a></span></p><p><span style="line-height: 25.6px;">173 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587537&amp;idx=1&amp;sn=0efdf532bc68a616c0fad4d0c0a732e3&amp;chksm=8d308048ba47095e0e7e1fb2072c555e3423dd6a1641ea500c9d6762b93596cde404c0a7718e&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587537&amp;idx=1&amp;sn=0efdf532bc68a616c0fad4d0c0a732e3&amp;chksm=8d308048ba47095e0e7e1fb2072c555e3423dd6a1641ea500c9d6762b93596cde404c0a7718e&amp;scene=21#wechat_redirect">用 config drive 配置网络</a></span></p><p><span style="line-height: 25.6px;">174 -&nbsp;<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587541&amp;idx=1&amp;sn=b1e9978e86e2c5abb5b9980c53a1f548&amp;chksm=8d30804cba47095ac9dece694bfaaf560a2f61857a02883b8f9d47060290a29b18f9951477fd&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==&amp;mid=2653587541&amp;idx=1&amp;sn=b1e9978e86e2c5abb5b9980c53a1f548&amp;chksm=8d30804cba47095ac9dece694bfaaf560a2f61857a02883b8f9d47060290a29b18f9951477fd&amp;scene=21#wechat_redirect">cloud-init 典型应用</a></span></p><p><span style="line-height: 25.6px;"><br  /></span></p><p><span style="line-height: 25.6px;">（已完结）</span></p><p><span style="line-height: 25.6px;"><br  /></span></p><p><span style="line-height: 25.6px;"><img data-s="300,640" data-type="png" data-src="http://mmbiz.qpic.cn/mmbiz/Hia4HVYXRicqHaoDKrDCfHMibFfu7n3powzeN3lMc2we6OI12oFHOjia5hbsETURbExuMUI5mrbpEoW9HpoSc9ZJyA/0?wx_fmt=png" data-ratio="0.6255060728744939" data-w="494"  /></span></p>
+                </div>
+                <script nonce="1701763053" type="text/javascript">
+                    var first_sceen__time = (+new Date());
+
+                    if ("" == 1 && document.getElementById('js_content')) {
+                        document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+                    }
+
+                    
+                    (function(){
+                        if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                            var link = document.createElement('link');
+                            var head = document.getElementsByTagName('head')[0];
+                            link.rel = 'stylesheet';
+                            link.type = 'text/css';
+                            link.href = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+                            head.appendChild(link);
+                        }
+                    })();
+                </script>
+                
+                
+                                
+                <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;"></div>
+
+                
+                                <div class="reward_area tc" id="js_preview_reward" style="display:none;">
+                    <p id="js_preview_reward_wording" class="tips_global reward_tips" style="display:none;"></p>
+                    <p>
+                        <a class="reward_access" id='js_preview_reward_link' href="##"><span class="icon-reward"></span>赞赏</a>
+
+                    </p>
+                </div>
+                <div class="reward_qrcode_area reward_area tc" id="js_preview_reward_qrcode" style="display:none;">
+                    <p class="tips_global">长按二维码向我转账</p>
+                    <p id="js_preview_reward_ios_wording" class="reward_tips" style="display:none;"></p>
+                    <span class="reward_qrcode_img_wrp"><img class="reward_qrcode_img" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_reward_qrcode.2x3534dd.png"></span>
+                    <p class="tips_global">受苹果公司新规定影响，微信 iOS 版的赞赏功能被关闭，可通过二维码转账支持公众号。</p>
+                </div>
+                            </div>
+                        
+                        <div class="rich_media_tool" id="js_toobar3">
+                
+                                
+                                            <a class="media_tool_meta meta_primary" id="js_view_source" href="##">阅读原文</a>
+                                <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                    <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                </span>
+
+                <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="##">投诉</a>
+
+            </div>
+
+
+                    </div>
+
+        <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
+
+        
+        <div class="rich_media_area_extra">
+
+            
+                        <div class="mpda_bottom_container" id="js_bottom_ad_area"></div>
+                        
+            <div id="js_iframetest" style="display:none;"></div>
+                        
+                        <div class="rich_media_extra" id="js_preview_cmt" style="display:none">
+              <p class="discuss_icon_tips rich_split_tips tr">
+                <a href="##" id="js_preview_cmt_write">写留言<img class="icon_edit" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png"></a>
+              </p>
+            </div>
+                    </div>
+
+        
+        <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+            <div class="qr_code_pc_inner">
+                <div class="qr_code_pc">
+                    <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                    <p>微信扫一扫<br>关注该公众号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="js_minipro_dialog" style="display:none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">即将打开"<span id="js_minipro_dialog_name"></span>"小程序</div>
+        <div class="weui-dialog__ft">
+            <a id="js_minipro_dialog_cancel" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+            <a id="js_minipro_dialog_ok" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_primary">打开</a>
+        </div>
+    </div>
+</div>
+
+        
+        <script nonce="1701763053">
+    var __DEBUGINFO = {
+        debug_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console34c264.js",
+        safe_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe34c264.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="1701763053" type="text/javascript">
+(function() {
+	var totalCount = 0,
+			finishCount = 0;
+
+	function _loadVConsolePlugin() {
+		window.vConsole = new window.VConsole();
+		while (window.vConsolePlugins.length > 0) {
+			var p = window.vConsolePlugins.shift();
+			window.vConsole.addPlugin(p);
+		}
+	}
+	
+	function _addVConsole(uri, cb) {
+		totalCount++;
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		var node = document.createElement('SCRIPT');
+		node.type = 'text/javascript';
+		node.src = url;
+		node.setAttribute('nonce', '1701763053');
+		if (cb) {
+			node.onload = cb;
+		}
+		document.getElementsByTagName('head')[0].appendChild(node);
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		window.vConsolePlugins = [];
+		_addVConsole('3.0.0/vconsole.min.js', function() {
+			
+			_addVConsole('plugin/vconsole-mpopt/1.0.1/vconsole-mpopt.js', _loadVConsolePlugin);
+		});
+	}
+})();
+</script>
+        
+<script nonce="1701763053" type="text/javascript">
+
+if (!window.console) window.console = { log: function() {} };
+
+if (typeof getComputedStyle == 'undefined') {
+    if (document.body.currentStyle) {
+        window.getComputedStyle = function(el) {
+            return el.currentStyle;
+        }
+    } else {
+        window.getComputedStyle = {};
+    }
+}
+(function(){
+    window.__zoom = 1;
+    
+    (function(){
+        var validArr = ","+([0.875, 1, 1.125, 1.25, 1.375]).join(",")+",";
+        var match = window.location.href.match(/winzoom=(\d+(?:\.\d+)?)/);
+        if (match && match[1]) {
+            var winzoom = parseFloat(match[1]);
+            if (validArr.indexOf(","+winzoom+",")>=0) {
+                window.__zoom = winzoom;
+            }
+        }
+    })();
+
+    var isIE = false;
+    if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+        isIE = true;
+    }
+    var getMaxWith=function(){
+        var container = document.getElementById('img-content');
+        var max_width = container.offsetWidth;
+        var container_padding = 0;
+        var container_style = getComputedStyle(container);
+        container_padding = parseFloat(container_style.paddingLeft) + parseFloat(container_style.paddingRight);
+        max_width -= container_padding;
+        var ua = navigator.userAgent.toLowerCase();
+        var re = new RegExp("msie ([0-9]+[\.0-9]*)");
+        var version;
+        if (re.exec(ua) != null) {
+            version = parseInt(RegExp.$1);
+        }
+        var isIE = false;
+        if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+            isIE = true;
+        }
+        if (!max_width) {
+            max_width = window.innerWidth - 30;      
+        }
+        return max_width;
+    };
+    var getParentWidth = function(dom){
+        var parent_width = 0;
+        var parent = dom.parentNode;
+        var outerWidth = 0;
+        while (true) {
+            if(!parent||parent.nodeType!=1) break;
+            var parent_style = getComputedStyle(parent);
+            if (!parent_style) break;
+            parent_width = parent.clientWidth - parseFloat(parent_style.paddingLeft) - parseFloat(parent_style.paddingRight) - outerWidth;
+            if (parent_width > 0) break;
+            outerWidth += parseFloat(parent_style.paddingLeft) + parseFloat(parent_style.paddingRight) + parseFloat(parent_style.marginLeft) + parseFloat(parent_style.marginRight) + parseFloat(parent_style.borderLeftWidth) + parseFloat(parent_style.borderRightWidth);
+            parent = parent.parentNode;
+        }
+        return parent_width;
+    }
+    var getOuterW=function(dom){
+        var style=getComputedStyle(dom),
+            w=0;
+        if(!!style){
+            w = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) + parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+        }
+        return w;
+    };
+    var getOuterH =function(dom){
+        var style=getComputedStyle(dom),
+            h=0;
+        if(!!style){
+            h = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+        }
+        return h;
+    };
+    var insertAfter = function(dom,afterDom){
+        var _p = afterDom.parentNode;
+        if(!_p){
+            return;
+        }
+        if(_p.lastChild === afterDom){
+            _p.appendChild(dom);
+        }else{
+            _p.insertBefore(dom,afterDom.nextSibling);
+        }
+    };
+    var getQuery = function(name,url){
+        
+        var u  = arguments[1] || window.location.search,
+            reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"),
+            r = u.substr(u.indexOf("\?")+1).match(reg);
+        return r!=null?r[2]:"";
+    };
+    (function(){
+        var images = document.getElementsByTagName('img');
+        var length = images.length;
+        var max_width = getMaxWith();
+        for (var i = 0; i < length; ++i) {
+            var src_ = images[i].getAttribute('data-src');
+            var realSrc = images[i].getAttribute('src');
+            if (!src_ || realSrc) continue;
+            var width_ = 1 * images[i].getAttribute('data-w') || max_width;
+            var ratio_ = 1 * images[i].getAttribute('data-ratio');
+            var height = 100;
+            if (ratio_ && ratio_ > 0) {
+                var img_style = getComputedStyle(images[i]);
+                var init_width = images[i].style.width;
+                
+                if (init_width) {
+                    images[i].setAttribute('_width', init_width);
+                    if (init_width != 'auto') width_ = parseFloat(img_style.width);
+                }
+                var parent_width = getParentWidth(images[i])||max_width;
+                var width = width_ > parent_width ? parent_width : width_; 
+                var img_padding_border = getOuterW(images[i])||0;
+                var img_padding_border_top_bottom = getOuterH(images[i])||0;
+                height = (width - img_padding_border) * ratio_ + img_padding_border_top_bottom;
+                images[i].style.cssText += ";width: " + width + "px !important;";
+                if (isIE) {
+                    var url = images[i].getAttribute('data-src');
+                    images[i].src = url;
+                } else {
+                    if(width > 40 && height > 40){
+                        images[i].className += ' img_loading';
+                    }
+                    images[i].src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+                }
+            } else {
+                images[i].style.cssText += ";visibility: hidden !important;";
+            }
+            images[i].style.cssText += ";height: " + height + "px !important;";
+        }
+    })();
+    window.__videoDefaultRatio=16/9;
+    window.__getVideoWh = function(dom){
+        var max_width = getMaxWith(),
+            width = max_width,
+            ratio_ = dom.getAttribute('data-ratio')*1||(4/3),
+            arr = [4/3, 16/9],
+            ret = arr[0],
+            abs = Math.abs(ret - ratio_);
+        for(var j=1,jl=arr.length;j<jl;j++){
+            var _abs = Math.abs(arr[j] - ratio_);
+            if(_abs<abs){
+                abs = _abs;
+                ret = arr[j];
+            }
+        }
+        ratio_ = ret;
+        var parent_width = getParentWidth(dom)||max_width,
+            width = width > parent_width ? parent_width : width,
+            outerW = getOuterW(dom)||0,
+            outerH = getOuterH(dom)||0,
+            videoW = width - outerW,
+            videoH = videoW/ratio_,
+            height = videoH + outerH;
+        return {w:width,h:height,vh:videoH,vw:videoW,ratio:ratio_};
+    };
+
+    (function(){
+        var iframe = document.getElementsByTagName('iframe');
+        for (var i=0,il=iframe.length;i<il;i++) {
+            var a = iframe[i];
+            var src_ = a.getAttribute('src')||a.getAttribute('data-src')||"";
+            if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                continue;
+            }
+            var vid = getQuery("vid",src_);
+            if(!vid){
+                continue;
+            }
+            vid=vid.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"");
+            a.removeAttribute('src');
+            a.style.display = "none";
+            var obj = window.__getVideoWh(a),
+                mydiv = document.createElement('img');
+            mydiv.className = "img_loading";
+            mydiv.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+            mydiv.setAttribute("data-vid",vid);
+            mydiv.style.cssText = "width: " + obj.w + "px !important;";
+            insertAfter(mydiv,a);
+            a.style.cssText += ";width: " + obj.w + "px !important;";
+            a.setAttribute("width",obj.w);
+            if(window.__zoom!=1){
+                a.style.display = "block";
+                mydiv.style.display = "none";
+                a.setAttribute("_ratio",obj.ratio);
+                a.setAttribute("_vid",vid);
+            }else{
+                mydiv.style.cssText += "height: " + obj.h + "px !important;";
+                a.style.cssText += "height: " + obj.h + "px !important;";
+                a.setAttribute("height",obj.h);
+            }
+            a.setAttribute("data-vh",obj.vh);
+            a.setAttribute("data-vw",obj.vw);
+            a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+obj.vw+"&height="+obj.vh+"&auto=0");
+        }
+    })();
+
+    (function(){
+        if(window.__zoom!=1){
+            document.getElementById('page-content').style.zoom = window.__zoom;
+            var a = document.getElementById('activity-name');
+            var b = document.getElementById('meta_content');
+            if(!!a){
+                a.style.zoom = 1/window.__zoom;
+            }
+            if(!!b){
+                b.style.zoom = 1/window.__zoom;
+            }
+            var images = document.getElementsByTagName('img');
+            for (var i = 0,il=images.length;i<il;i++) {
+                images[i].style.zoom = 1/window.__zoom;
+            }
+            var iframe = document.getElementsByTagName('iframe');
+            for (var i = 0,il=iframe.length;i<il;i++) {
+                var a = iframe[i];
+                a.style.zoom = 1/window.__zoom;
+                var src_ = a.getAttribute('data-src')||"";
+                if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                    continue;
+                }
+                var ratio = a.getAttribute("_ratio");
+                var vid = a.getAttribute("_vid");
+                a.removeAttribute("_ratio");
+                a.removeAttribute("_vid");
+                var vw = a.offsetWidth - (getOuterW(a)||0);
+                var vh = vw/ratio;
+                var h = vh + (getOuterH(a)||0)
+                a.style.cssText += "height: " + h + "px !important;"
+                a.setAttribute("height",h);
+                a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+vw+"&height="+vh+"&auto=0");
+                a.style.display = "none";
+                var parent = a.parentNode;
+                if(!parent){
+                    continue;
+                }
+                for(var j=0,jl=parent.children.length;j<jl;j++){
+                    var child = parent.children[j];
+                    if(child.className.indexOf("img_loading")>=0 && child.getAttribute("data-vid")==vid){
+                        child.style.cssText += "height: " + h + "px !important;";
+                        child.style.display = "";
+                    }
+                }
+            }
+        }
+    })();
+})();
+</script>
+<script nonce="1701763053" type="text/javascript">
+
+    var not_in_mm_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm36906d.css";
+    var windowwx_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+    var article_improve_combo_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo3baf4b.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = ""||"MzIwMTM5MjUwMg==";
+
+    var source = "";
+    var ascene = "";
+    var subscene = "";
+    var abtest_cookie = "";
+
+    var scene = 75;
+
+    var itemidx = "";
+    var appmsg_token   = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "CloudMan";
+    var appmsg_type = "6";
+    var ct = "1458053308";
+    var publish_time = "2017-11-21" || "";
+    var user_name = "gh_18755e9bc729";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/Hia4HVYXRicqEuc0qaUfotaudOddA2Qbg4VWhy2rd6B1HAte8Fk1ic4qT7dB3icl9K2UeA6Jl7icCdiaTBb31jSDjrOA/0?wx_fmt=png";
+    var ori_head_img_url = "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7ENWbv3PPWgaYLeu5iaSbYSyfyxlkx8fnDe9EHibTou0VA/132";
+    var msg_title = "《每天5分钟玩转 OpenStack》教程目录";
+    var msg_desc = "《每天5分钟玩转 OpenStack》目录，点击链接可查看相应章节。";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/Hia4HVYXRicqHMqMSRSQ4cVsPpNCwpd2dHrcfXP1icH6waETel0hY1sZziajUdiaXZicibMic2ay4NBLnXYqX36QMPNlIw/0?wx_fmt=png";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MzIwMTM5MjUwMg==\x26amp;mid=403471227\x26amp;idx=1\x26amp;sn=d645ec0df174e05384bbff40aada4cff\x26amp;chksm=0b1673623c61fa74f005312b9ed1713a51344824523b657a7407b03a7c54810d0d17b656d211#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = 'https://item.jd.com/12086376.html';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '1011WoNa18J4htVckCR1N3rU';
+    var networkType;
+    var appmsgid = '' || ''|| "403471227";
+    var comment_id = "0" || "0" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+    var msg_daily_idx = "0" || "";
+    var profileReportInfo = "" || "";
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    var source_username = "";
+    
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+    var source_biz = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        wxa_product : ""*1,
+        show_msg_voice: "0"*1,
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7ENWbv3PPWgaYLeu5iaSbYSyfyxlkx8fnDe9EHibTou0VA/0"||(window.location.protocol+"//"+window.location.host + "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+    var appmsg_fe_filter = "contenteditable";
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "" * 1;
+    var like_num = "" * 1;
+    var liked = "" == 'true' ? true : false;
+    var is_temp_url = "" ? 1 : 0;
+    var send_time = "";
+    var icon_emotion_switch = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+    var icon_emotion_switch_active = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+    var icon_loading_white = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+    var icon_audio_unread = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+    var icon_qqmusic_default = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+    var icon_qqmusic_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source393e3a.png";
+    var icon_kugou_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/kugou/icon_kugou_source393e3a.png";
+
+    var topic_default_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+    var comment_edit_icon = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png';
+    var comment_loading_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif';
+    var voice_in_appmsg = {
+        "1":"1"
+            };
+    var wxa_img_alert = "" != 'false';
+
+    
+    
+    
+    
+
+    
+    var weapp_sn_arr_json = "" || "";
+
+    
+    var ban_scene = "0" * 1;
+
+    var svr_time = "1520651077" * 1;
+    
+    var is_transfer_msg = ""*1||0;
+
+    var malicious_title_reason_id = "0" * 1; 
+
+    
+    var modify_time = "";
+
+        window.wxtoken = "";
+        
+    
+    
+    
+    
+    window.is_login = '0' * 1; 
+
+    window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27611+2,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01,    
+                    badjs_rate: 0.1 
+                }
+            });
+        }
+    }
+    </script>
+
+<script nonce="1701763053" type="text/javascript">
+(function(){
+    window.__logClientLog = function(msg){
+        try{
+            var method;
+            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+                method = 'writeLog';
+            }else if(/(Android)/i.test(navigator.userAgent)){
+                method = 'log';
+            }
+            if(!!method)
+                doLog(method, msg);
+        }catch(e){
+            console.error(e)
+            throw e
+        }
+    }
+    function doLog(method, msg){
+        if(!!method && !!top.window.WeixinJSBridge && !!top.window.WeixinJSBridge.invoke){
+            top.window.WeixinJSBridge.invoke(method, {
+                "level" : 'info',
+                "msg" : "[WechatFe][appmsg]" + msg
+            });
+        }else{
+            
+            setTimeout(function(){
+                if( top.window.document.addEventListener ){
+                    top.window.document.addEventListener('WeixinJSBridgeReady', function(){
+                        doLog(method,msg)
+                    }, false);
+                }else if (top.window.document.attachEvent){
+                    top.window.document.attachEvent('WeixinJSBridgeReady', function(){
+                        doLog(method, msg)
+                    });
+                    top.window.document.attachEvent('onWeixinJSBridgeReady', function(){
+                        doLog(method, msg)
+                    });
+                }
+            }, 0)
+        }
+    }
+    window.__moonErrRep = function(src){
+        window.__logClientLog(' moon load err ' + src);
+    }
+    window.__moonSucRep = function(src){
+        window.__logClientLog(' moon load suc ' + src);
+    }
+    window.setTimeout(function(){
+        window.__logClientLog(' index.html end, __moonhasinit : ' + window.__moonhasinit);
+    }, 500);
+})();
+</script>
+
+        <script nonce="1701763053">window.__moon_host = 'res.wx.qq.com';window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"new_video/player.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player.html3b8dd6.js","biz_wap/zepto/touch.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch34c264.js","biz_wap/zepto/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event34c264.js","biz_wap/zepto/zepto.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto34c264.js","page/pages/video.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/pages/video.css3b8dd6.js","a/appdialog_confirm.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm.html34f0d8.js","widget/wx_profile_dialog_primary.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/widget/wx_profile_dialog_primary.css34f0d8.js","appmsg/emotion/caret.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","new_video/player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player3baab7.js","a/appdialog_confirm.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm34c32a.js","biz_wap/jsapi/cardticket.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket34c264.js","biz_common/utils/emoji_panel_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_panel_data3518c6.js","biz_common/utils/emoji_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_data3518c6.js","appmsg/emotion/textarea.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea353f34.js","appmsg/emotion/nav.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common3518c6.js","appmsg/emotion/slide.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/loadscript.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript39aac6.js","pages/music_report_conf.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_report_conf39aac6.js","pages/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report3baab7.js","pages/player_adaptor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/player_adaptor39d6ee.js","pages/music_player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player3c0ef8.js","appmsg/emotion/dom.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom31ff31.js","appmsg/comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_tpl.html36c376.js","biz_wap/utils/fakehash.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/fakehash38c7af.js","biz_common/utils/wxgspeedsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk3518c6.js","a/video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/video3ba336.js","a/sponsor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor3bb523.js","a/app_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/app_card393ef4.js","a/ios.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios393966.js","a/android.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android393966.js","a/profile.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile31ff31.js","a/cpc_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/cpc_a_tpl.html3b540a.js","a/sponsor_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor_a_tpl.html36c7cf.js","a/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_tpl.html3b86a9.js","a/mpshop.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop311179.js","a/wxopen_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/wxopen_card3a95b8.js","a/card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card311179.js","biz_wap/utils/position.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position34c264.js","a/a_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_report393966.js","appmsg/my_comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html36906d.js","appmsg/cmt_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html369d00.js","sougou/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion353f34.js","biz_wap/utils/wapsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/wapsdk34c264.js","biz_common/utils/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report3518c6.js","appmsg/open_url_with_webview.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/open_url_with_webview3145f0.js","biz_common/utils/http.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/http3518c6.js","biz_common/utils/cookie.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie3518c6.js","appmsg/topic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html31ff31.js","pages/weapp_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/weapp_tpl.html36906d.js","biz_common/utils/monitor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor3518c6.js","appmsg/weapp_common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp_common3af55a.js","pages/voice_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html38518d.js","pages/kugoumusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/kugoumusic_ctrl393e3a.js","pages/qqmusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_ctrl39b68c.js","pages/voice_component.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component3c0ef8.js","pages/qqmusic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html393e3a.js","new_video/ctl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","a/testdata.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/testdata3bb523.js","appmsg/reward_entry.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry3b1cff.js","appmsg/comment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment3944ad.js","appmsg/like.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like375fea.js","pages/version4video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video3a9bef.js","a/a.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a3bb523.js","rt/appmsg/getappmsgext.rt.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage34c264.js","biz_common/tmpl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl3518c6.js","appmsg/share_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share_tpl.html36906d.js","appmsg/img_copyright_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","pages/video_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl36ebcf.js","biz_common/ui/imgonepx.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx3518c6.js","biz_common/utils/respTypes.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes3518c6.js","biz_wap/utils/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/log34c264.js","sougou/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index36913b.js","biz_wap/safe/mutation_observer_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report34c264.js","appmsg/fereport.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport3b9457.js","appmsg/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report3404b3.js","appmsg/report_and_source.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source3a7477.js","appmsg/page_pos.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos3a95b8.js","appmsg/cdn_speed_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report3097b2.js","appmsg/wxtopic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic31a3be.js","appmsg/new_index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/new_index36906d.js","appmsg/weapp.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp3af55a.js","appmsg/weproduct.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weproduct3af55a.js","appmsg/voicemsg.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voicemsg3b1748.js","appmsg/autoread.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/autoread3af14e.js","appmsg/voice.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice38518d.js","appmsg/qqmusic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic39dc43.js","appmsg/iframe.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe39ab71.js","appmsg/product.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/product393966.js","appmsg/review_image.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image3af55a.js","appmsg/outer_link.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","appmsg/copyright_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/async.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async3b27d5.js","biz_wap/ui/lazyload_img.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img3af55a.js","biz_common/log/jserr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr3518c6.js","appmsg/share.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share3c0ef8.js","appmsg/cdn_img_lib.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib38b7bb.js","biz_common/utils/url/parse.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse36ebcf.js","page/appmsg/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm.css36906d.js","page/appmsg/page_mp_article_improve_combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo.css3baf4b.js","page/appmsg_new/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/not_in_mm.css36f05c.js","page/appmsg_new/combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/combo.css3baf4b.js","biz_common/moment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/moment3518c6.js","biz_wap/jsapi/core.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core3b0568.js","biz_common/dom/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event3a25e9.js","appmsg/test.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/test354009.js","biz_wap/utils/mmversion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion34c264.js","appmsg/max_age.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/max_age2fdd28.js","biz_common/dom/attr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr3518c6.js","biz_wap/utils/ajax.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax38c31a.js","appmsg/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/log300330.js","biz_common/dom/class.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class3518c6.js","biz_wap/utils/device.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device34c264.js","biz_common/utils/string/html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html3518c6.js","appmsg/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index3baf4b.js"};</script><script nonce="1701763053" type="text/javascript" id="moon_inline" > window.__mooninline=1; window.setTimeout(function() {  function __moonf__(){
+if(!window.__moonhasinit){
+window.__moonhasinit=!0,window.__moonclientlog=[],window.__wxgspeeds&&(window.__wxgspeeds.moonloadedtime=+new Date),
+"object"!=typeof JSON&&(window.JSON={
+stringify:function(){
+return"";
+},
+parse:function(){
+return{};
+}
+});
+var e=function(){
+function e(e){
+try{
+var o;
+/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)?o="writeLog":/(Android)/i.test(navigator.userAgent)&&(o="log"),
+o&&t(o,e);
+}catch(n){
+throw console.error(n),n;
+}
+}
+function t(e,o){
+e&&top.window.WeixinJSBridge&&top.window.WeixinJSBridge.invoke?top.window.WeixinJSBridge.invoke(e,{
+level:"info",
+msg:"[WechatFe][moon]"+o
+}):setTimeout(function(){
+top.window.document.addEventListener?top.window.document.addEventListener("WeixinJSBridgeReady",function(){
+t(e,o);
+},!1):top.window.document.attachEvent&&(top.window.document.attachEvent("WeixinJSBridgeReady",function(){
+t(e,o);
+}),top.window.document.attachEvent("onWeixinJSBridgeReady",function(){
+t(e,o);
+}));
+},0);
+}
+var n;
+localStorage&&JSON.parse(localStorage.getItem("__WXLS__moonarg"))&&"fromls"==JSON.parse(localStorage.getItem("__WXLS__moonarg")).method&&(n=!0),
+e(" moon init, moon_inline:"+window.__mooninline+", moonls:"+n),function(){
+var e={},o={},t={};
+e.COMBO_UNLOAD=0,e.COMBO_LOADING=1,e.COMBO_LOADED=2;
+var n=function(e,t,n){
+if(!o[e]){
+o[e]=n;
+for(var r=3;r--;)try{
+moon.setItem(moon.prefix+e,n.toString()),moon.setItem(moon.prefix+e+"_ver",moon_map[e]);
+break;
+}catch(i){
+moon.clear();
+}
+}
+},r=window.alert;
+window.__alertList=[],window.alert=function(e){
+r(e),window.__alertList.push(e);
+};
+var i=function(e){
+if(!e||!o[e])return null;
+var n=o[e];
+if("function"==typeof n&&!t[e]){
+var a={},s={
+exports:a
+},c=n(i,a,s,r);
+n=o[e]=c||s.exports,t[e]=!0;
+}
+if(".css"===e.substr(-4)){
+var d=document.getElementById(e);
+if(!d){
+d=document.createElement("style"),d.id=e;
+var w=/url\s*\(\s*\/(\"(?:[^\\\"\r\n\f]|\\[\s\S])*\"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|[^)}]+)\s*\)/g,m=window.testenv_reshost||window.__moon_host||"res.wx.qq.com";
+n=n.replace(w,"url(//"+m+"/$1)"),d.innerHTML=n,document.getElementsByTagName("head")[0].appendChild(d);
+}
+}
+return n;
+};
+e.combo_status=e.COMBO_UNLOAD,e.run=function(){
+var o=e.run.info,t=o&&o[0],n=o&&o[1];
+if(t&&e.combo_status==e.COMBO_LOADED){
+var r=i(t);
+n&&n(r);
+}
+},e.use=function(o,t){
+window.__wxgspeeds&&(window.__wxgspeeds.seajs_use_time=+new Date),e.run.info=[o,t],
+e.run();
+},window.define=n,window.seajs=e;
+}(),function(){
+if(window.__nonce_str){
+var e=document.createElement;
+document.createElement=function(o){
+var t=e.apply(this,arguments);
+return"object"==typeof o&&(o=o.toString()),"string"==typeof o&&"script"==o.toLowerCase()&&t.setAttribute("nonce",window.__nonce_str),
+t;
+};
+}
+window.addEventListener&&window.__DEBUGINFO&&Math.random()<.01&&window.addEventListener("load",function(){
+var e=document.createElement("script");
+e.src=__DEBUGINFO.safe_js,e.type="text/javascript",e.async=!0;
+var o=document.head||document.getElementsByTagName("head")[0];
+o.appendChild(e);
+});
+}(),function(){
+function t(e){
+return"[object Array]"===Object.prototype.toString.call(e);
+}
+function n(e){
+return"[object Object]"===Object.prototype.toString.call(e);
+}
+function r(e){
+var t=e.stack+" "+e.toString()||"";
+try{
+if(window.testenv_reshost){
+var n="http(s)?://"+window.testenv_reshost,r=new RegExp(n,"g");
+t=t.replace(r,"");
+}else t=t.replace(/http(s)?:\/\/res\.wx\.qq\.com/g,"");
+for(var r=/\/([^.]+)\/js\/(\S+?)\.js(\,|:)?/g;r.test(t);)t=t.replace(r,function(e,o,t,n){
+return t+n;
+});
+}catch(e){
+t=e.stack?e.stack:"";
+}
+var i=[];
+for(o in u)u.hasOwnProperty(o)&&i.push(o+":"+u[o]);
+return i.push("STK:"+t.replace(/\n/g,"")),i.join("|");
+}
+function i(e){
+if(!e){
+var o=window.onerror;
+window.onerror=function(){},f=setTimeout(function(){
+window.onerror=o,f=null;
+},50);
+}
+}
+function a(e,o,t){
+if(!/^mp\.weixin\.qq\.com$/.test(location.hostname)){
+var n=[];
+t=t.replace(location.href,(location.origin||"")+(location.pathname||"")).replace("#wechat_redirect","").replace("#rd","").split("&");
+for(var r=0,i=t.length;i>r;r++){
+var a=t[r].split("=");
+a[0]&&a[1]&&n.push(a[0]+"="+encodeURIComponent(a[1]));
+}
+var s=new window.Image;
+return void(s.src=(o+n.join("&")).substr(0,1024));
+}
+var c;
+if(window.ActiveXObject)try{
+c=new ActiveXObject("Msxml2.XMLHTTP");
+}catch(d){
+try{
+c=new ActiveXObject("Microsoft.XMLHTTP");
+}catch(w){
+c=!1;
+}
+}else window.XMLHttpRequest&&(c=new XMLHttpRequest);
+c&&(c.open(e,o,!0),c.setRequestHeader("cache-control","no-cache"),c.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),
+c.setRequestHeader("X-Requested-With","XMLHttpRequest"),c.send(t));
+}
+function s(e){
+return function(o,t){
+if("string"==typeof o)try{
+o=new Function(o);
+}catch(n){
+throw n;
+}
+var r=[].slice.call(arguments,2),a=o;
+return o=function(){
+try{
+return a.apply(this,r.length&&r||arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),w&&window.__moon_report&&(window.__moon_report([{
+offset:O,
+log:"timeout_error;host:"+top.location.host,
+e:e
+}]),i(f)),e;
+}
+},e(o,t);
+};
+}
+function c(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this,a=t||function(){};
+return t=function(){
+try{
+return a.apply(r,arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),w&&window.__moon_report&&(window.__moon_report([{
+offset:y,
+log:"listener_error;type:"+o+";host:"+top.location.host,
+e:e
+}]),i(f)),e;
+}
+},a.moon_lid=q,b[q]=t,q++,e.call(r,o,t,n);
+};
+}
+function d(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this;
+return t=b[t.moon_lid],e.call(r,o,t,n);
+};
+}
+var w,m,_,l,u,p,f,h=/MicroMessenger/i.test(navigator.userAgent),g=window.define,v=0,y=2,x=4,O=9,j=10;
+if(window.__initCatch=function(e){
+w=e.idkey,m=e.startKey||0,_=e.limit,l=e.badjsId,u=e.reportOpt||"",p=e.extInfo||{},
+p.rate=p.rate||.5;
+},window.__moon_report=function(e,o){
+var i=.5;
+if(p&&p.rate&&(i=p.rate),o&&"number"==typeof o&&(i=o),!(!/mp\.weixin\.qq\.com/.test(location.href)&&!/payapp\.weixin\.qq\.com/.test(location.href)||Math.random()>i||!h||top!=window&&!/mp\.weixin\.qq\.com/.test(top.location.href))&&(n(e)&&(e=[e]),
+t(e)&&""!=w)){
+var s="",c=[],d=[],u=[],f=[];
+"number"!=typeof _&&(_=1/0);
+for(var g=0;g<e.length;g++){
+var v=e[g]||{};
+if(!(v.offset>_||"number"!=typeof v.offset||v.offset==x&&p&&p.network_rate&&Math.random()>=p.network_rate)){
+var y=1/0==_?m:m+v.offset;
+c[g]="[moon]"+w+"_"+y+";"+v.log+";"+r(v.e||{})||"",d[g]=y,u[g]=1;
+}
+}
+for(var O=0;O<d.length;O++)f[O]=w+"_"+d[O]+"_"+u[O],s=s+"&log"+O+"="+c[O];
+if(f.length>0){
+a("POST",location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?","idkey="+f.join(";")+"&r="+Math.random()+"&lc="+c.length+s);
+var i=1;
+if(p&&p.badjs_rate&&(i=p.badjs_rate),l&&Math.random()<i){
+s=s.replace(/uin\:(.)*\|biz\:(.)*\|mid\:(.)*\|idx\:(.)*\|sn\:(.)*\|/,"");
+var j=new Image,b="https://badjs.weixinbridge.com/badjs?id="+l+"&level=4&from="+encodeURIComponent(location.host)+"&msg="+encodeURIComponent(s);
+j.src=b.slice(0,1024);
+}
+}
+}
+},window.setTimeout=s(window.setTimeout),window.setInterval=s(window.setInterval),
+Math.random()<.01&&window.Document&&window.HTMLElement){
+var b={},q=0;
+Document.prototype.addEventListener=c(Document.prototype.addEventListener),Document.prototype.removeEventListener=d(Document.prototype.removeEventListener),
+HTMLElement.prototype.addEventListener=c(HTMLElement.prototype.addEventListener),
+HTMLElement.prototype.removeEventListener=d(HTMLElement.prototype.removeEventListener);
+}
+var D=window.navigator.userAgent;
+if((/ip(hone|ad|od)/i.test(D)||/android/i.test(D))&&!/windows phone/i.test(D)&&window.localStorage&&window.localStorage.setItem){
+var E=window.localStorage.setItem,M=0;
+window.localStorage.setItem=function(e,o){
+if(!(M>=10))try{
+E.call(window.localStorage,e,o);
+}catch(t){
+t.stack&&console&&console.error&&console.error("[TryCatch]"+t.stack),window.__moon_report([{
+offset:j,
+log:"localstorage_error;"+t.toString(),
+e:t
+}]),M++,M>=3&&window.moon&&window.moon.clear&&moon.clear();
+}
+};
+}
+window.seajs&&g&&(window.define=function(){
+for(var o,t=[],n=arguments&&arguments[0],a=0,s=arguments.length;s>a;a++){
+var c=o=arguments[a];
+"function"==typeof o&&(o=function(){
+try{
+return c.apply(this,arguments);
+}catch(o){
+throw"string"==typeof n&&console.error("[TryCatch][DefineeErr]id:"+n),o.stack&&console&&console.error&&console.error("[TryCatch]"+o.stack),
+w&&window.__moon_report&&(window.__moon_report([{
+offset:v,
+log:"define_error;id:"+n+";",
+e:o
+}]),i(f)),e(" [define_error]"+JSON.stringify(r(o))),o;
+}
+},o.toString=function(e){
+return function(){
+return e.toString();
+};
+}(arguments[a])),t.push(o);
+}
+return g.apply(this,t);
+});
+}(),function(o){
+function t(e,o,t){
+return window.__DEBUGINFO?(window.__DEBUGINFO.res_list||(window.__DEBUGINFO.res_list=[]),
+window.__DEBUGINFO.res_list[e]?(window.__DEBUGINFO.res_list[e][o]=t,!0):!1):!1;
+}
+function n(e){
+var o=new TextEncoder("utf-8").encode(e),t=crypto.subtle||crypto.webkitSubtle;
+return t.digest("SHA-256",o).then(function(e){
+return r(e);
+});
+}
+function r(e){
+for(var o=[],t=new DataView(e),n=0;n<t.byteLength;n+=4){
+var r=t.getUint32(n),i=r.toString(16),a="00000000",s=(a+i).slice(-a.length);
+o.push(s);
+}
+return o.join("");
+}
+function i(e,o,t){
+if("object"==typeof e){
+var n=Object.prototype.toString.call(e).replace(/^\[object (.+)\]$/,function(e,o){
+return o;
+});
+if(t=t||e,"Array"==n){
+for(var r=0,i=e.length;i>r;++r)if(o.call(t,e[r],r,e)===!1)return;
+}else{
+if("Object"!==n&&a!=e)throw"unsupport type";
+if(a==e){
+for(var r=e.length-1;r>=0;r--){
+var s=a.key(r),c=a.getItem(s);
+if(o.call(t,c,s,e)===!1)return;
+}
+return;
+}
+for(var r in e)if(e.hasOwnProperty(r)&&o.call(t,e[r],r,e)===!1)return;
+}
+}
+}
+var a=o.localStorage,s=document.head||document.getElementsByTagName("head")[0],c=1,d=11,w=12,m=13,_=window.__allowLoadResFromMp?1:2,l=window.__allowLoadResFromMp?1:0,u=_+l,p=window.testenv_reshost||window.__moon_host||"res.wx.qq.com",f=new RegExp("^(http(s)?:)?//"+p);
+window.__loadAllResFromMp&&(p="mp.weixin.qq.com",_=0,u=_+l);
+var h=0,g={
+prefix:"__MOON__",
+loaded:[],
+unload:[],
+clearSample:Math.random()<h,
+hit_num:0,
+mod_num:0,
+version:1003,
+cacheData:{
+js_mod_num:0,
+js_hit_num:0,
+js_not_hit_num:0,
+js_expired_num:0,
+css_mod_num:0,
+css_hit_num:0,
+css_not_hit_num:0,
+css_expired_num:0
+},
+init:function(){
+g.loaded=[],g.unload=[];
+var e,t,r;
+if(a){
+var s="_moon_ver_key_",c=a.getItem(s);
+c!=g.version&&(g.clear(),a.setItem(s,g.version));
+}
+if((-1!=location.search.indexOf("no_moon1=1")||-1!=location.search.indexOf("no_lshttps=1"))&&g.clear(),
+a){
+var d=1*a.getItem(g.prefix+"clean_time"),w=+new Date;
+if(w-d>=1296e6){
+g.clear();
+try{
+!!a&&a.setItem(g.prefix+"clean_time",+new Date);
+}catch(m){}
+}
+}
+i(moon_map,function(i,s){
+if(t=g.prefix+s,r=!!i&&i.replace(f,""),e=!!a&&a.getItem(t),version=!!a&&(a.getItem(t+"_ver")||"").replace(f,""),
+g.mod_num++,r&&-1!=r.indexOf(".css")?g.cacheData.css_mod_num++:r&&-1!=r.indexOf(".js")&&g.cacheData.js_mod_num++,
+g.clearSample||!e||r!=version)g.unload.push(r.replace(f,"")),r&&-1!=r.indexOf(".css")?e?r!=version&&g.cacheData.css_expired_num++:g.cacheData.css_not_hit_num++:r&&-1!=r.indexOf(".js")&&(e?r!=version&&g.cacheData.js_expired_num++:g.cacheData.js_not_hit_num++);else{
+if("https:"==location.protocol&&window.moon_hash_map&&window.moon_hash_map[s]&&window.crypto)try{
+n(e).then(function(e){
+window.moon_hash_map[s]!=e&&console.log(s);
+});
+}catch(c){}
+try{
+var d="//# sourceURL="+s+"\n//@ sourceURL="+s;
+o.eval.call(o,'define("'+s+'",[],'+e+")"+d),g.hit_num++,r&&-1!=r.indexOf(".css")?g.cacheData.css_hit_num++:r&&-1!=r.indexOf(".js")&&g.cacheData.js_hit_num++;
+}catch(c){
+g.unload.push(r.replace(f,""));
+}
+}
+}),g.load(g.genUrl());
+},
+genUrl:function(){
+var e=g.unload;
+if(!e||e.length<=0)return[];
+var o,t,n="",r=[],i={},a=-1!=location.search.indexOf("no_moon2=1"),s="//"+p;
+-1!=location.href.indexOf("moon_debug2=1")&&(s="//mp.weixin.qq.com");
+for(var c=0,d=e.length;d>c;++c){
+/^\/(.*?)\//.test(e[c]);
+var w=/^\/(.*?)\//.exec(e[c]);
+w.length<2||!w[1]||(t=w[1],n=i[t],n?(o=n+","+e[c],o.length>1e3||a?(r.push(n+"?v="+g.version),
+n=location.protocol+s+e[c],i[t]=n):(n=o,i[t]=n)):(n=location.protocol+s+e[c],i[t]=n));
+}
+for(var m in i)i.hasOwnProperty(m)&&r.push(i[m]);
+return r;
+},
+load:function(e){
+if(window.__wxgspeeds&&(window.__wxgspeeds.mod_num=g.mod_num,window.__wxgspeeds.hit_num=g.hit_num),
+!e||e.length<=0)return seajs.combo_status=seajs.COMBO_LOADED,seajs.run(),console.debug&&console.debug("[moon] load js complete, all in cache, cost time : 0ms, total count : "+g.mod_num+", hit num: "+g.hit_num),
+void window.__moonclientlog.push("[moon] load js complete, all in cache, cost time : 0ms, total count : "+g.mod_num+", hit num: "+g.hit_num);
+seajs.combo_status=seajs.COMBO_LOADING;
+var o=0,t=+new Date;
+window.__wxgspeeds&&(window.__wxgspeeds.combo_times=[],window.__wxgspeeds.combo_times.push(t)),
+i(e,function(n){
+g.request(n,u,function(){
+if(window.__wxgspeeds&&window.__wxgspeeds.combo_times.push(+new Date),o++,o==e.length){
+var n=+new Date-t;
+window.__wxgspeeds&&(window.__wxgspeeds.mod_downloadtime=n),seajs.combo_status=seajs.COMBO_LOADED,
+seajs.run(),console.debug&&console.debug("[moon] load js complete, url num : "+e.length+", total mod count : "+g.mod_num+", hit num: "+g.hit_num+", use time : "+n+"ms"),
+window.__moonclientlog.push("[moon] load js complete, url num : "+e.length+", total mod count : "+g.mod_num+", hit num: "+g.hit_num+", use time : "+n+"ms");
+}
+});
+});
+},
+request:function(o,n,r){
+if(o){
+n=n||0,o.indexOf("mp.weixin.qq.com")>-1&&((new Image).src=location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?idkey=27613_32_1&r="+Math.random(),
+window.__moon_report([{
+offset:w,
+log:"load_script_from_mp: "+o
+}],1));
+var i=-1;
+window.__DEBUGINFO&&(__DEBUGINFO.res_list||(__DEBUGINFO.res_list=[]),__DEBUGINFO.res_list.push({
+type:"js",
+status:"pendding",
+start:+new Date,
+end:0,
+url:o
+}),i=__DEBUGINFO.res_list.length-1),-1!=location.search.indexOf("no_lshttps=1")&&(o=o.replace("http://","https://"));
+var a=document.createElement("script");
+a.src=o,a.type="text/javascript",a.async=!0,a.down_time=+new Date,a.onerror=function(s){
+t(i,"status","error"),t(i,"end",+new Date);
+var w=new Error(s);
+if(n>=0)if(l>n){
+var _=o.replace("res.wx.qq.com","mp.weixin.qq.com");
+g.request(_,n,r);
+}else g.request(o,n,r);else window.__moon_report&&window.__moon_report([{
+offset:c,
+log:"load_script_error: "+o,
+e:w
+}],1);
+if(n==l-1&&window.__moon_report([{
+offset:d,
+log:"load_script_error: "+o,
+e:w
+}],1),-1==n){
+var u="ua: "+window.navigator.userAgent+", time="+(+new Date-a.down_time)+", load_script_error -1 : "+o;
+window.__moon_report([{
+offset:m,
+log:u
+}],1);
+}
+window.__moonclientlog.push("moon load js error : "+o+", error -> "+w.toString()),
+e("moon_request_error url:"+o);
+},"undefined"!=typeof moon_crossorigin&&moon_crossorigin&&a.setAttribute("crossorigin",!0),
+a.onload=a.onreadystatechange=function(){
+t(i,"status","loaded"),t(i,"end",+new Date),!a||a.readyState&&!/loaded|complete/.test(a.readyState)||(t(i,"status","200"),
+a.onload=a.onreadystatechange=null,"function"==typeof r&&r());
+},n--,s.appendChild(a),e("moon_request url:"+o+" retry:"+n);
+}
+},
+setItem:function(e,o){
+!!a&&a.setItem(e,o);
+},
+clear:function(){
+a&&(i(a,function(e,o){
+~o.indexOf(g.prefix)&&a.removeItem(o);
+}),console.debug&&console.debug("[moon] clear"));
+},
+idkeyReport:function(e,o,t){
+t=t||1;
+var n=e+"_"+o+"_"+t;
+(new Image).src="/mp/jsmonitor?idkey="+n+"&r="+Math.random();
+}
+};
+seajs&&seajs.use&&"string"==typeof window.__moon_mainjs&&seajs.use(window.__moon_mainjs),
+window.moon=g;
+}(window),function(){
+try{
+var e=function(e){
+var o;
+if(window.ActiveXObject)try{
+o=new ActiveXObject("Msxml2.XMLHTTP");
+}catch(t){
+try{
+o=new ActiveXObject("Microsoft.XMLHTTP");
+}catch(n){
+o=!1;
+}
+}else window.XMLHttpRequest&&(o=new XMLHttpRequest);
+o&&(o.open("post",location.protocol+"//mp.weixin.qq.com/mp/fereport?",!0),o.setRequestHeader("cache-control","no-cache"),
+o.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),
+o.setRequestHeader("X-Requested-With","XMLHttpRequest"),o.send(e));
+};
+Math.random()<1&&top.window.location!=window.location&&"qq.com"==top.window.location.hostname.substr(-6)&&"mp.weixin.qq.com"!=top.window.location.hostname&&e(-1!=navigator.userAgent.indexOf("MicroMessenger")?["action=iframe_report","in_wechat=0","url="+window.encodeURIComponent(top.window.location.href),"iframe_url="+window.encodeURIComponent(window.location.href),"r="+Math.random()].join("&"):["action=iframe_report","in_wechat=0","url="+window.encodeURIComponent(top.window.location.href),"iframe_url="+window.encodeURIComponent(window.location.href),"r="+Math.random()].join("&"));
+}catch(o){}
+}(),window.moon.init();
+};
+e(),!!window.__moon_initcallback&&window.__moon_initcallback(),window.__wxgspeeds&&(window.__wxgspeeds.moonendtime=+new Date);
+}
+}
+__moonf__(); }, 25);</script><script nonce="1701763053" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+</script>
+
+    </body>
+    <script nonce="1701763053" type="text/javascript">document.addEventListener("touchstart", function() {},false);</script>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
